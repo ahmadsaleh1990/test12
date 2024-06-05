@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="visit_history_activity_title" >VISIT HISTORY</string>
+    
+    <string name="blank_visits_statistics_label">Blank visit(s)</string>
+    <string name="objectives_statistics_label">Objective(s)</string>
+    <string name="surveys_statistics_label">Survey(s)</string>
+    <string name="sales_orders_statistics_label">Sales Order(s)</string>
+    <string name="sales_invoices_statistics_label">Sample Item(s)</string>
+    
+</resources>

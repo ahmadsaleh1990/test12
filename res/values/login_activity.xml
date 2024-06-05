@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="user_code_hint">Enter your user code</string>
+    <string name="company_code_hint">Enter your company code</string>
+    <string name="user_login_name_hint">Enter your user login name</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="sign_in_label">SIGN IN</string>
+    <string name="previous_login_label">Previous Login</string>
+    <string name="seconds_since_previous_login_message">Few seconds ago.</string>
+    <string name="minutes_since_previous_login_message">minute(s) ago.</string>
+    <string name="hours_since_previous_login_message">hour(s) ago.</string>
+    <string name="error_invalid_username_message">This username is invalid</string>
+    <string name="error_invalid_password_message">This password is incorrect</string>
+    
+</resources>

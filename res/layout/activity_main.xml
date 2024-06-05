@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+>
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="ON/OFF" />
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:visibility="gone"
+        android:text="Enable Discoverable" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btnFindUnpairedDevices"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="btnDiscover"-->
+<!--        android:text="Scan" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paired Printer"
+            android:layout_below="@+id/textview"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Black"
+            android:background="#66CCCCCC"
+            android:padding="5dp"
+            android:textSize="30dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/listView"
+    	android:choiceMode="none"
+			android:focusableInTouchMode="false"
+			android:focusable="false"
+			android:descendantFocusability="afterDescendants"
+	        android:requiresFadingEdge="vertical"
+			android:divider="@color/listview_divider"
+			android:dividerHeight="1dp"
+			android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"  />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Printers"
+            android:layout_below="@+id/textview"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Black"
+            android:background="#66CCCCCC"
+            android:padding="5dp"
+            android:textSize="30dp" />
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+  		android:choiceMode="none"
+		android:focusableInTouchMode="false"
+        android:focusable="false"
+	    android:descendantFocusability="afterDescendants"
+        android:requiresFadingEdge="vertical"
+		android:divider="@color/listview_divider"
+		android:dividerHeight="1dp"
+		android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+    </LinearLayout>
+
+</LinearLayout>

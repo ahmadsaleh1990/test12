@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/action_mark_all"
+        android:icon="@drawable/action_mark_all"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_unmark_all"
+        android:icon="@drawable/action_unmark_all"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_print"
+        android:icon="@drawable/action_print"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_clear"
+        android:icon="@drawable/action_clear"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_expand"
+        android:icon="@drawable/action_expand"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_narrow"
+        android:icon="@drawable/action_narrow"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_history"
+        android:icon="@drawable/action_history"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_list"
+        android:icon="@drawable/action_list"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_barcode"
+        android:icon="@drawable/action_barcode"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_add_contact"
+        android:icon="@drawable/quick_action_add_contact"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+	<item android:id="@+id/action_camera"
+        android:icon="@drawable/action_camera"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_forward"
+        android:icon="@drawable/action_forward"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/action_add"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_remove"
+        android:icon="@drawable/action_remove"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_edit"
+        android:icon="@drawable/action_edit"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_keyboard"
+        android:icon="@drawable/action_keyboard"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_calendar"
+        android:icon="@drawable/action_calendar"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_save"
+    	android:icon="@drawable/action_save"
+        android:showAsAction="always"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/action_search"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView"
+        android:visible="false"
+        android:enabled="false" />
+    
+    <item android:id="@+id/action_settings"
+    	android:icon="@drawable/action_settings"
+    	android:showAsAction="always"
+    	android:visible="false"
+        android:enabled="false" />
+    
+	<item android:id="@+id/action_info"
+		android:icon="@drawable/action_info"
+		android:showAsAction="always"
+		android:visible="false"
+        android:enabled="false" />
+        
+	<item android:id="@+id/action_refresh"
+		android:icon="@drawable/action_refresh"
+		android:showAsAction="always"
+		android:visible="false"
+        android:enabled="false" />
+        
+	<item android:id="@+id/action_cart"
+		android:icon="@drawable/action_cart"
+		android:showAsAction="always"
+		android:visible="false"
+        android:enabled="false" />
+	
+	<item android:id="@+id/action_calculator"
+		android:icon="@drawable/action_calculator"
+		android:showAsAction="always"
+		android:visible="false"
+        android:enabled="false" />
+	
+	<item android:id="@+id/action_basket"
+		android:icon="@drawable/action_basket"
+		android:showAsAction="always"
+		android:visible="false"
+        android:enabled="false" />
+
+</menu>

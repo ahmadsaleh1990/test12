@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+
+	<string name="client_stock_activity_title" >CLIENT STOCK</string>
+	<string name="outlet_stock_count_activity_title" >OUTLET STOCK COUNT </string>
+	<string name="client_asset_activity_title" >CLIENT ASSET</string>
+	
+    <string name="empty_client_stock_list_label" >No client stock.</string>
+    <string name="empty_outlet_stock_list_label" >No outlet stock.</string>
+    <string name="empty_client_asset_list_label" >No client asset.</string>
+    <string name="no_client_stock_message" >There are no client stock counts.</string>
+    <string name="no_client_asset_message" >There are no client assets.</string>
+    <string name="client_stock_count_type_list_dialog_title" >Choose the count type.</string>
+    <string name="client_stock_count_invalid_expiry_date_message">Please provide an expiry date.</string>
+    <string name="client_stock_count_expiry_date_inconsistency_message">The provided expiry date and the under six months notice are inconsistent. Please try again.</string>
+    <string name="client_stock_count_invalid_asset_statuses_message">The asset existence / status is invalid. Please try again.</string>
+    
+    <string name="client_stock_count_type_shelf_label">Shelf</string>
+    <string name="client_stock_count_type_stock_label">Stock</string>
+    
+    <string name="client_stock_count_regular_items_label">REGULAR ITEM</string>
+    <string name="client_stock_count_assets_items_label">ASSETS</string>
+    
+    <string name="client_stock_count_details_label" >CLIEN STOCK COUNT DETAILS</string>
+    <string name="client_stock_count_products_label" >CLIEN STOCK COUNT PRODUCTS</string>
+    
+    <string name="client_asset_details_label" >CLIEN ASSET DETAILS</string>
+    <string name="client_asset_products_label" >CLIEN ASSET PRODUCTS</string>
+    
+    <string name="client_stock_count_note_title" >CLIENT STOCK NOTE</string>
+    <string name="client_stock_count_note_hint" >Enter the client stock count note.</string>
+    
+    <string name="client_asset_note_title" >CLIENT ASSET NOTE</string>
+    <string name="client_asset_note_hint" >Enter the client asset count note.</string>
+    
+    <string name="client_stock_count_is_merchandize_label">Is Merchandize</string>
+    <string name="client_stock_count_is_available_label">Not Available</string>
+    <string name="client_stock_count_is_over_six_months_label">Is Over Six Months</string>
+    <string name="client_stock_count_data_label">Client stock count</string>
+    <string name="client_stock_count_asset_label">Asset</string>
+    
+    <string name="client_stock_delete_success_message" >Client Stock successfully deleted.</string>
+    <string name="client_stock_save_success_message" >Client Stock successfully saved.</string>
+    <string name="client_stock_save_failure_message" >Client Stock could not be saved.</string>
+   
+    <string name="client_stock_date_label" >Updated Date</string>
+    <string name="client_stock_total_amount_label" >Total Amount</string>
+</resources>

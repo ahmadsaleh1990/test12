@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<LinearLayout
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+        android:padding="3dip"
+        android:layout_margin="10dip"
+	    android:background="@drawable/main_panel_background"
+	      >
+	   
+	    <ListView android:id="@android:id/list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:requiresFadingEdge="vertical"
+			android:divider="@color/listview_divider"
+			android:dividerHeight="1dp"
+			android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+	   
+	</LinearLayout>
+
+
+
+<FrameLayout
+	    android:id="@+id/layout_passcode"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000"
+	    android:visibility="gone" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_passcode"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_passcode"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updatePasscode" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Note -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+					<TextView
+					    android:id="@+id/label_passcode_message"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="10dp"
+					    android:layout_marginLeft="10dp"
+					    android:layout_marginRight="10dp"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/Red"
+					    android:textStyle="bold"
+					    android:freezesText="true" />
+		            
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_passcode"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="text"
+						android:singleLine="true"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+</merge>

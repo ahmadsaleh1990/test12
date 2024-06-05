@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="target_activity_title" >TARGET COVERAGE</string>
+    <string name="empty_target_list_label" >No targets.</string>
+    
+    <string name="target_users_label">USERS</string>
+    <string name="target_clients_label">CLIENTS</string>
+    <string name="target_items_label">ITEMS</string>
+    <string name="target_divisions_label">DIVISIONS</string>
+    <string name="target_currency_label">CURRENCY</string>
+	<string name="target_frequency_label">FREQUENCY</string>
+	<string name="target_quantity_label">QUANTITY</string>
+	<string name="target_amount_label">AMOUNT</string>
+	<string name="target_coverage_label">COVERAGE</string>
+    
+</resources>

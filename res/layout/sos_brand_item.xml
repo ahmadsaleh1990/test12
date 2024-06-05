@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2015 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@color/White"
+    android:orientation="horizontal" >
+ 
+	 
+ 
+    <TextView
+        android:id="@+id/label_item"
+        android:layout_width="0dip"
+        android:layout_height="55dp"
+        android:layout_weight="5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="left"
+        android:background="@color/White"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:layout_marginRight="1dp" />
+    
+    <TextView
+        android:id="@+id/label_brand"
+        android:layout_width="0dip"
+        android:layout_height="55dp"
+        android:layout_weight="2"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:background="@color/White"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:layout_marginRight="1dp" />
+    
+    <me.SyncWise.Android.Widgets.TinyNumberPicker
+        xmlns:tnp="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tiny_number_picker_share_of_shelf"
+        android:layout_width="0dip"
+        android:layout_height="55dp"
+        android:layout_weight="2"
+        android:layout_marginRight="1dp"
+        android:background="@color/White"
+        tnp:iconSize="27dp"
+        tnp:isDecimal="true" />
+     
+ 
+ 
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="sales_return_activity_title" >REQUEST FOR RETURN</string>
+    <string name="empty_sales_return_list_label" >No request for returns.</string>
+    <string name="client_reference_number">Client Reference Number</string>
+    <string name="client_reference_number_hint" >Enter the client reference number.</string>
+    <string name="rfr_min_expiry_date_message">The expiry date should exceed the required number of days. Please try again.</string>
+    <string name="no_rfr_reasons_message" >There is no valid reasons for the request for return module. Please contact the administrator.</string>
+    
+    <string name="sales_return_delete_success_message" >Request for return successfully deleted.</string>
+    <string name="sales_return_delete_failure_message" >Request for return not deleted.</string>
+    <string name="no_sales_return_message" >There are no request for returns.</string>
+    <string name="sales_return_save_success_message" >Request for return successfully saved.</string>
+    <string name="sales_return_save_failure_message" >Request for return could not be saved.</string>
+    <string name="invalid_client_reference_number_message">The client reference number is invalid. Please try again.</string>
+    <string name="used_client_reference_number_message">The client reference number is previously used. Please provide a new one.</string>
+    
+</resources>

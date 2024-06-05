@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Client Card -->
+    
+    <include layout="@layout/client_card" />
+    
+    <!-- Free Entry Note -->
+    
+    <me.SyncWise.Android.Widgets.LinedEditText
+        xmlns:let="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edittext_reason_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/reason_note_hint"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/listview_divider"
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:visibility="gone"
+        let:line_color="@color/DeepSkyBlue" />
+    
+    <!-- Reason List -->
+    
+	<LinearLayout
+		android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:layout_margin="5dip"
+        android:padding="3dip"
+        android:orientation="vertical"
+	    android:background="@drawable/main_panel_background" >
+	    
+	    <include layout="@layout/emtpy_list_view"/>
+	    
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:requiresFadingEdge="vertical"
+			android:divider="@color/listview_divider"
+			android:dividerHeight="1dp"
+			android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+    
+	</LinearLayout>
+
+</LinearLayout>

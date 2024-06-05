@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:clickable="true"
+	android:focusable="true"
+	android:background="@drawable/action_item_btn">
+        	
+	<ImageView
+		android:id="@+id/iv_icon" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>
+
+	<TextView 
+		android:id="@+id/tv_title"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:gravity="center_vertical"
+		android:paddingLeft="5dip"
+		android:paddingRight="10dip"
+		android:text="Chart"
+		android:textColor="#fff"/>
+									         
+</LinearLayout>         

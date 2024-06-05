@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2014 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/take_a_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dip"
+            android:onClick="takePicture"
+            android:background="@drawable/button_blue"
+            android:text="@string/take_a_photo"
+            android:textColor="@color/White"
+            android:textAppearance="@style/TextAppearance.ExtraSmall" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        
+        <Button
+            android:id="@+id/delete_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dip"
+            android:onClick="deletePicture"
+            android:background="@drawable/button_blue"
+            android:text="@string/delete_picture"
+            android:textColor="@color/White"
+            android:textSize="9sp" />
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/boxes_1" />
+        
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal" >
+	
+	        <Button
+	            android:id="@+id/previous"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dip"
+	            android:onClick="getPrevious"
+	            android:background="@drawable/button_blue"
+	            android:text="@string/previous" />
+	
+	        <Button
+	            android:id="@+id/next"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dip"
+	            android:onClick="getNext"
+	            android:background="@drawable/button_blue"
+	            android:text="@string/next" />
+	        
+	    </LinearLayout>
+	    
+	    <ImageView
+	        android:id="@+id/rotate_picture_icon"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_gravity="center_vertical|right"
+	        android:src="@drawable/reload"
+	        android:onClick="rotatePicture"
+	        android:contentDescription="@string/contentDescription" />
+    
+    </FrameLayout>
+
+</LinearLayout>

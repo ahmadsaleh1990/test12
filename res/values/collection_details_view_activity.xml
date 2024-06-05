@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="collection_details_view_activity_title" >COLLECTION</string>
+    <string name="total_cash_label" >TOTAL CASH</string>
+    <string name="total_check_label" >TOTAL CHECK</string>
+    <string name="empty_collections_list_label" >No collections.</string>
+    <string name="empty_cash_list_label" >No cash payments.</string>
+    <string name="empty_check_list_label" >No check payments.</string>
+    <string name="collection_header_total_amount_label" >Total amount</string>
+    <string name="collection_bank_label" >Bank</string>
+    
+    <string name="daily_collection_report_error_message">An error occurred while building the report. Please contact the administrator.</string>
+    
+</resources>

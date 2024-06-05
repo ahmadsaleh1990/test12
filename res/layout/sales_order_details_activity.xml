@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <View
+        android:id="@+id/view_clear_focus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    
+    <!-- Orders List -->
+    
+	<me.SyncWise.Android.Widgets.CustomLinearLayout
+	    android:id="@+id/layout_list"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="5dip"
+        android:padding="3dip"
+        android:orientation="vertical"
+	    android:background="@drawable/main_panel_background" >
+	    
+	    <!-- RFR Header View -->
+	    
+	    <LinearLayout
+            android:id="@+id/layout_rfr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+	    
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="center_vertical" >
+	
+	            <!-- Reasons Spinner -->
+	            
+				<Spinner
+				    android:id="@+id/sp_rfr_reason"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:layout_marginTop="5dp"
+				    android:layout_marginLeft="5dp"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginRight="20dp" />
+				
+			    <!-- Date Picker Button -->
+			    
+			    <ImageButton
+			        android:id="@+id/button_date_picker"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:layout_marginTop="5dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginRight="20dp"
+			        android:background="@drawable/segment_button"
+			        android:src="@drawable/calendar_blue"
+			        android:contentDescription="@string/contentDescription" />
+			    
+			    <!-- Date Label -->
+			    
+			    <TextView
+			        android:id="@+id/label_date_picker"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+				    android:layout_marginTop="5dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginRight="5dp"
+			        android:gravity="center_vertical"
+		  	        android:textAppearance="@style/TextAppearance.Medium"
+			        android:textColor="@color/Black"
+			        android:textColorHint="@color/listview_divider" />
+		            
+		    </LinearLayout>
+	    
+        	<!-- Divider -->
+	    
+        	<View
+        	    android:layout_width="match_parent"
+        	    android:layout_height="3dp"
+        	    android:background="@color/listview_divider" />
+	    
+        </LinearLayout>
+	    
+	    <!-- Empty View -->
+	    
+		<include layout="@layout/emtpy_list_view"/>
+	    
+		<!-- Orders List View -->
+		
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:choiceMode="none"
+			android:focusableInTouchMode="false"
+			android:focusable="false"
+			android:descendantFocusability="afterDescendants"
+	        android:requiresFadingEdge="vertical"
+			android:divider="@color/listview_divider"
+			android:dividerHeight="1dp"
+			android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+ 
+	</me.SyncWise.Android.Widgets.CustomLinearLayout>
+	
+	<!-- Order Quantity / Price Details - Secondary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_order_detail"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	        
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_item_name"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_order"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updateOrder" />
+		            
+		        </LinearLayout>
+		        
+		        <ScrollView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" >
+		        
+					<LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="vertical" >
+			        
+				        <!-- Inner Panel - Quantity -->
+				        
+				        <LinearLayout
+				            android:id="@+id/layout_order_quantity"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+				            android:background="@drawable/main_panel_background"
+				            android:padding="10dp"
+				            android:orientation="vertical" >
+				            
+				            <TextView
+				                android:id="@+id/label_order_quantity"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginBottom="10dp"
+				                android:textAppearance="@style/TextAppearance.Medium"
+				                android:textStyle="bold"
+				                android:gravity="center" />
+
+						    <!-- Unit Of Measurement - Labels -->
+						    
+							<include layout="@layout/sales_order_item" />
+				            
+						    <!-- Unit Of Measurement - Quantities -->
+						    
+						    <LinearLayout
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:orientation="horizontal" >
+						    
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_quantity_big"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_quantity_medium"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_quantity_small"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_quantity_free"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						    </LinearLayout>
+							
+				        </LinearLayout>
+				        
+				        <!-- Inner Panel - Price -->
+				        
+				        <LinearLayout
+				            android:id="@+id/layout_order_price"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+				            android:background="@drawable/main_panel_background"
+				            android:padding="10dp"
+				            android:orientation="vertical" >
+							
+				            <TextView
+				                android:id="@+id/label_order_price"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginBottom="10dp"
+				                android:textAppearance="@style/TextAppearance.Medium"
+				                android:textStyle="bold"
+				                android:gravity="center" />
+				            
+						    <!-- Unit Of Measurement - Labels -->
+						    
+							<include layout="@layout/sales_order_item" />
+				            
+						    <!-- Unit Of Measurement - Prices -->
+						    
+						    <LinearLayout
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:orientation="horizontal" >
+						    
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_price_big"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_price_medium"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						        <me.SyncWise.Android.Widgets.NumberPicker
+						            android:id="@+id/number_picker_price_small"
+						            android:layout_width="0dp"
+						            android:layout_height="wrap_content"
+						            android:layout_weight="1" />
+						        
+						    </LinearLayout>
+							
+				        </LinearLayout>
+			        
+					</LinearLayout>
+			        
+				</ScrollView>
+					
+		    </LinearLayout>
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+
+	<!-- Order Note - Secondary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_order_note"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_sales_order_note"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_note"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updateNote" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Note -->
+		        
+		        <LinearLayout
+		            android:id="@+id/layout_sales_order_note"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_sales_order_note"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="textCapSentences|textMultiLine"
+					    android:scrollbars="vertical"
+					    android:fadeScrollbars="false"
+					    android:minLines="6"
+					    android:maxLines="6"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- Client Reference Number - Tertiary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_client_reference_number"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_client_reference_number"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_client_reference_number"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updateClientReferenceNumber" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Note -->
+		        
+		        <LinearLayout
+		            android:id="@+id/layout_inner__client_reference_number"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_client_reference_number"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="textCapSentences|textMultiLine"
+					    android:scrollbars="vertical"
+					    android:fadeScrollbars="false"
+					    android:minLines="6"
+					    android:maxLines="6"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- PassCode - Tertiary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_passcode"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000"
+	    android:visibility="gone" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_passcode"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_passcode"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updatePasscode" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Note -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+					<TextView
+					    android:id="@+id/label_passcode_message"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="10dp"
+					    android:layout_marginLeft="10dp"
+					    android:layout_marginRight="10dp"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/Red"
+					    android:textStyle="bold"
+					    android:freezesText="true" />
+		            
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_passcode"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="text"
+						android:singleLine="true"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- Baskets - Quaternary View -->
+	
+    <LinearLayout
+        android:id="@+id/layout_basket_promotions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip"
+        android:background="@drawable/main_panel_background"
+        android:orientation="vertical"
+        android:padding="3dip"
+        android:visibility="gone" >
+
+        <include layout="@layout/emtpy_list_view" />
+
+        <ExpandableListView
+            android:id="@+id/basket_promotions_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </ExpandableListView>
+        
+    </LinearLayout>
+	       <me.SyncWise.Android.Widgets.CoverFlow.CoverFlow
+	    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/coverflowReflect"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip"
+		android:background="#7F000000"
+		coverflow:imageWidth="100dip"
+		coverflow:imageHeight="150dip"
+		coverflow:withReflection="true"
+		coverflow:imageReflectionRatio="0.2"
+		coverflow:reflectionGap="2dip"
+		android:visibility="gone" />    
+</FrameLayout>

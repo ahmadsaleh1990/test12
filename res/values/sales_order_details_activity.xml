@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="sales_order_details_label" >SALES ORDER DETAILS</string>
+    <string name="sales_order_products_label" >SALES ORDER PRODUCTS</string>
+    <string name="sales_order_details_label_cash" >SALES ORDER DETAILS CASH</string>
+    <!-- Item Batch resources -->
+    <string name="empty_item_batch_list_label" >No item batch.</string>
+    <string name="batch_number_label" >Batch Number</string>
+    <string name="expiry_date_label" >Expiry Date</string>
+    <string name="other_batch_label" >Enter Batch</string>
+    
+    <string name="warehouse_quantities_updated_message">The warehouse quantities have been updated.</string>
+    
+    <string name="missing_client_currency_price_list_message" >Cannot perform/display sales order because the client has no currencies. Please contact the administrator.</string>
+    <string name="missing_client_children_price_list_message" >Cannot perform/display sales order because the client has no accounts. Please contact the administrator.</string>
+    
+    <string name="perform_RFR_message">Perform request for return ?</string>
+    
+    <string name="sales_order_already_processed_message" >Sales Order could not be saved because it has been previously sent to the back office.</string>
+    
+    
+        <string name="sales_order_free_unit_case_message" >Sales Order could not be saved. Please Check the Limit Free Case and Unit.</string>
+    
+    
+    
+    <string name="sales_order_client_credit_limit_exceeded_message">The credit limit for the current client has been exceeded !</string>
+    
+    <string name="sales_order_note_title" >SALES ORDER NOTE</string>
+    <string name="sales_order_note_hint" >Enter sales order note.</string>
+    
+    <string name="gross_amount_label" >GROSS AMOUNT</string>
+    <string name="discount_amount_label" >DISCOUNT AMOUNT</string>
+    <string name="net_amount_label" >NET AMOUNT</string>
+    <string name="taxes_label" >TAXES</string>
+    <string name="total_value_label" >TOTAL VALUE</string>
+    <string name="total_sku_so_label" >TOTAL SKU/SO</string>
+    <string name="total_sku_si_label" >TOTAL SKU/SI</string>
+    <string name="total_cases_si_label" >TOTAL CASES</string>
+    <string name="total_units_si_label" >TOTAL UNITS</string>
+    <string name="sales_order_note_label" >NOTE 1</string>
+     <string name="sales_order_note_label_1" >NOTE 2</string>
+    <!-- Quick Action Items -->
+    <string name="quick_action_sales_order_edit_label" >Edit</string>
+    <string name="quick_action_sales_order_remove_label" >Remove</string>
+    <string name="available" >available</string>
+        <string name="not_available" >not available</string>
+    
+</resources>

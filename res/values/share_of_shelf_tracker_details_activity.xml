@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="share_of_shelf_tracker_details_activity_title" >SHARE OF SHELF TRACKER</string>
+    <string name="empty_share_of_shelf_list_label" >No share of shelves defined.</string>
+    <string name="share_of_shelf_tracker_populate_list_error_message" >An error occurred. The share of shelves list cannot be displayed.</string>
+    <string name="share_of_shelf_invalid_percentage_value">Please input valid values for SHARE OF SHELF and CATEGORY (between 0 and 100 %).</string>
+    <string name="share_of_shelf_item_label">BRAND</string>
+    <string name="share_of_shelf_brief_label">SOS</string>
+    <string name="share_of_shelf_competitor_brief_label">SOS COMPETITOR</string>
+    <string name="share_of_shelf_category_label">CATEGORY</string>
+    <string name="share_of_shelf_percentage_label">% SO</string>
+    <string name="share_of_shelf_bda_meter_label">BDA METER</string>
+    <string name="share_of_shelf_bda_percentage_label">BDA %</string>
+    
+    <string name="share_of_shelf_save_success_message" >Share of shelf successfully saved.</string>
+    <string name="share_of_shelf_save_failure_message" >Share of shelf could not be saved.</string>
+    <string name="share_of_shelf_save_success_message1" >Mondelez Share of shelf successfully saved.</string>
+</resources>

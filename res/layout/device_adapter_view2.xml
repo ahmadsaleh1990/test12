@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_weight="2"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDeviceName"
+        android:textColor="@color/Black"
+        android:text="ttttttt"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDeviceAddress"
+        android:text="ttttttt"
+
+        android:textSize="15sp"/>
+ 
+</LinearLayout>
+  
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+ 
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btnPrint"
+        android:layout_height="wrap_content"
+        android:text="Print" />
+     <CheckBox
+    android:id="@+id/checkBox1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="true"
+    android:text="Zebra" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+ 
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btnact"
+        android:layout_height="wrap_content"
+        android:text="UnPair" />
+     <CheckBox
+    android:id="@+id/checkBox2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="true"
+    android:text="Intermec" />
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+ 
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    >
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btnaccept"
+        android:layout_height="wrap_content"
+        android:text="Assign" />
+          <CheckBox
+    android:id="@+id/checkBox3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="true"
+    android:text="MIP" />
+     </LinearLayout>
+</LinearLayout>

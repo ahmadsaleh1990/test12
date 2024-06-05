@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="call_menu_activity_title" >CALL IN PROGRESS</string>
+    
+    <string name="visit_start_date_label" >Call started at</string>
+    
+    <string name="invalid_action_call_message" >Cannot perform the selected action in the current visit.</string>
+    
+    <string name="cannot_perform_action_not_linked_client_message">The current client does not belong to your division.</string>
+    <string name="cannot_perform_action_not_collection_client_message">You cannot collect from this client.</string>
+    <string name="cannot_end_visit_unpaid_invoice_message">The current cash client has unpaid invoices. It should be collected or cancelled.</string>
+    <string name="cannot_end_visit_unpaid_invoice_message12">The current cash client has unpaid invoices. It should be collected .</string>
+    <string name="cannot_end_visit_unpaid_invoice_message1">The current credit client has credit ammount. It should be collected or cancelled.</string>
+    <string name="cannot_end_visit_unpaid_invoice_message112">The current credit client has credit ammount. It should be collected.</string>
+    <string name="cannot_end_visit_unpaid_invoice_message2">The current credit client has unpaid cash invoices. It should be collected or cancelled.</string>
+        <string name="cannot_end_visit_unpaid_invoice_message1112">The current credit client has unpaid cash invoices. It should be collected.</string>
+    <string name="use_passcode">Use passcode</string>
+     <string name="use_credit">Credit</string>
+     <string name="normal_price">Normal Price</string>
+     <string name="special_price">Special Price</string>
+     
+    <string name="has_overdues_current_division">The current client has overdue amounts in the current division.</string>
+    <string name="sales_invoice_passcode_required_day">This Client Has exceeded his Credit Days!\n Please contact the Administrator for a Passcode.</string>
+    <string name="has_overdues_current_company">The current client has overdue amounts in the current company (current and other divisions).</string>
+    <string name="has_overdues_check">The current client has overdue amounts Check</string>
+    <string name="has_overdues_other_divisions">The current client has overdue amounts in other divisions of the current company.</string>
+    
+    <!-- TEMP -->
+    <string name="no_target_defined">NO TARGET DEFINED.</string>
+    
+    <!-- Menu Items -->
+
+    <string name="visit_note_title" >VISIT NOTE</string>
+    <string name="visit_note_description" >Input a brief note about the performed visit, including any feedbacks and remarks.</string>
+    
+    <string name="blank_visit_title" >BLANK VISIT</string>
+    <string name="blank_visit_description" >Perform a blank visit by providing a note along with the contact persons.</string>
+    
+    <string name="sales_order_title" >SALES ORDER</string>
+    <string name="sales_order_description" >Sale confirmation and purchase order.</string>
+    
+    <string name="sales_invoice_title" >SALES INVOICE</string>
+    <string name="sales_invoice_description" >Deliver and invoice goods.</string>
+    
+    <string name="sales_rfr_title" >REQUEST FOR RETURN</string>
+    <string name="sales_rfr_description" >Request for return items.</string>
+    
+    <string name="direct_return_title" >DIRECT RETURN</string>
+    <string name="direct_return_description" >DIRECT RETURN items.</string>
+    
+    <string name="sales_return_title" >RETURN</string>
+    <string name="sales_return_description" >Return items.</string>
+    <string name="sales_return_toast" >THERE ARE NO RETURNS.</string>
+    
+    <string name="client_stock_title" >CLIENT STOCK</string>
+    <string name="client_stock_description" >Count Items found at client.</string>
+  
+    <string name="collection_title" >COLLECTIONS</string>
+    <string name="collection_description" >Collect Money from Clients.</string>
+    
+    <string name="client_stock_count_title" >CLIENT STOCK COUNT</string>
+    <string name="client_stock_count_description" >Inventory of the client shelf - stock.</string>
+
+        <string name="outlet_stock_count_title" >OUTLET STOCK COUNT</string>
+    <string name="outlet_stock_count_description" >Items availablity</string>
+    
+    <string name="client_asset_title" >CLIENT ASSET</string>
+    <string name="client_asset_description" >Assets of the client shelf - stock.</string>
+    
+    <string name="SalesHistory_title" >SALES HISTORY</string>
+    <string name="SalesHistory_description" >Show recent Sales transactions.</string>
+    
+    <string name="client_objectives_title" >TO DO LIST</string>
+    <string name="client_objectives_description" >List of objectives to manage clients related tasks.</string>
+    
+    <string name="daily_collection_report_activity_title" >DAILY COLLECTION REPORT</string>
+    <string name="daily_collection_report_activity_description" >View all payments collected today.</string>
+    
+    <string name="collection_settlement_activity_description" >Settle the remaining collections.</string>
+    
+    <string name="client_survey_title" >POST-CALL PLANNING</string>
+    <string name="client_survey_description" >Fill samples questions.</string>
+    
+    <string name="scoring_sheet_title" >SCORING SHEET</string>
+    <string name="scoring_sheet_description" >Merchandizing - Fill category of questions.</string>
+    <string name="share_of_shelf_title1" >SHARE OF SHELF / Display TRACKER</string>
+    <string name="share_of_shelf_title" >SHARE OF SHELF TRACKER</string>
+    <string name="share_of_shelf_description" >Share of shelf and category for each outlet.</string>
+    
+</resources>

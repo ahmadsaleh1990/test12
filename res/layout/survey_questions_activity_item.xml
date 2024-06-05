@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Question Item - Question -->
+    
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+	    <!-- Question Item - Icon -->
+	    
+	    <ImageView
+	        android:id="@+id/icon_question"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_gravity="top"
+	        android:contentDescription="@string/contentDescription" />
+	    
+	    <!-- Question Item - Description -->
+	    
+        <TextView
+            android:id="@+id/label_question_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+			android:padding="10dp"
+			android:textAppearance="@style/TextAppearance.Medium"
+			android:textColor="@color/Black" />
+        
+        <!-- Question Item - Images -->
+        
+	    <ImageButton
+	        android:id="@+id/button_view_picture"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_gravity="top"
+	        android:background="@drawable/segment_button"
+	        android:src="@drawable/picture"
+	        android:onClick="viewPictures"
+	        android:contentDescription="@string/contentDescription" />
+	    
+	</LinearLayout>
+	
+	<!-- Question Item - Answer -->
+	
+	<LinearLayout
+	    android:id="@+id/layout_answer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:paddingLeft="5dp"
+	    android:padding="10dp"
+	    android:background="@drawable/question_answer_panel_background"
+	    android:visibility="gone"
+	    android:orientation="horizontal" />	
+	   
+	<!-- Question Item - Sub Question -->
+	
+	<LinearLayout
+	    android:id="@+id/layout_subquestion"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:paddingLeft="5dp"
+	    android:padding="10dp"
+	    android:background="@drawable/question_answer_panel_background"
+	    android:visibility="gone"
+	    android:orientation="horizontal" />	
+	
+	<!-- List Separator -->
+	
+	<View
+	    android:id="@+id/separator"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/listview_divider" />
+	
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- Main Client List -->
+    
+    <include layout="@layout/search_list_activity" />
+    
+	<!-- Secondary Client Filter List -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_client_filter_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+		<LinearLayout
+			android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_margin="5dip"
+		    android:padding="3dip"
+		    android:orientation="vertical"
+		    android:background="@drawable/main_panel_background" >
+		    
+	        <ExpandableListView
+		        android:id="@+id/expandablelistview_client_filter"
+		    	android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:requiresFadingEdge="vertical"
+		        android:fadeScrollbars="false"
+   		    	android:divider="@color/listview_divider"
+		    	android:dividerHeight="1dp"
+		    	android:childDivider="@color/listview_divider"
+		    	android:groupIndicator="@drawable/expander_group"
+		    	android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+		   
+		</LinearLayout>
+	
+		<!-- Cancel View Icon -->
+		
+		<LinearLayout
+		    android:id="@+id/icon_cancel_secondary_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="top|right"
+		    android:padding="7dp" >
+		
+			<ImageView
+			    android:layout_width="25dp"
+			    android:layout_height="25dp"
+			    android:padding="2dp"
+			    android:src="@drawable/cancel"
+			    android:background="@drawable/red_circle"
+			    android:contentDescription="@string/contentDescription" />
+		
+		</LinearLayout>
+		
+	</FrameLayout>
+    
+</FrameLayout>

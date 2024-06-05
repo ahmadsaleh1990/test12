@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="new_client_activity_title">NEW CLIENT</string>
+    
+    <string name="new_client_account_number_label">ACCOUNT NUMBER</string>
+    <string name="new_client_client_name_label">CLIENT NAME</string>
+    <string name="new_client_client_phone_label">CLIENT PHONE</string>
+    <string name="new_client_client_mobile_label">CLIENT MOBILE</string>
+    <string name="new_client_client_fax_label">CLIENT FAX</string>
+    <string name="new_client_client_address_label">CLIENT ADDRESS</string>
+    <string name="new_client_client_email_label">CLIENT EMAIL</string>
+    <string name="new_client_financial_number_label">FINANCIAL NUMBER</string>
+    <string name="new_client_cnss_label">C.N.S.S.</string>
+    <string name="new_client_syndicate_number_label">SYNDICATE NUMBER</string>
+    <string name="new_client_license_number_label">LICENSE NUMBER</string>
+    
+</resources>

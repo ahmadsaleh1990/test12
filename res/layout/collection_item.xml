@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<!-- Collection Invoice -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+    
+    <!-- Collection Invoice - Icon -->
+    
+    <ImageView
+        android:id="@+id/icon_collection_invoice"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/money"
+        android:contentDescription="@string/contentDescription" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical" >
+        
+        <!-- Collection Invoice - invoice code -->
+        
+        <TextView
+            android:id="@+id/label_invoice_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Medium"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:maxLines="2"
+   	        android:shadowColor="@color/listview_divider_light"
+	        android:shadowDx="5"
+	        android:shadowDy="5"
+	        android:shadowRadius="10" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+        	<!-- Collection Invoice - Invoice Original Amount -->
+        
+	        <TextView
+	            android:id="@+id/label_invoice_original_amount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	          
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+         	<!-- Collection Invoice - Invoice Remaining Amount -->
+        
+	        <TextView
+	            android:id="@+id/label_invoice_remaining_amount"
+	             android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	         
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+	        <TextView
+	            android:id="@+id/label_invoice_type"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	             
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+        	</LinearLayout>
+        	
+        
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+	        <!-- Item Item - Issue Date  -->
+	        
+	        <TextView
+	            android:id="@+id/label_invoice_issue_date"
+	          android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	    
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+	        <!-- Item Item - Due Date  -->
+	        
+	        <TextView
+	            android:id="@+id/label_invoice_due_date"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	          
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+	        </LinearLayout>
+	        
+         
+         
+         	<CheckBox android:layout_height="wrap_content"
+	    	  android:layout_width="wrap_content"
+	    	  android:id="@+id/checkbox_available" 
+	     	  android:textAppearance="@style/TextAppearance.Medium"
+	     	  android:text="@string/confirm_label"/>
+        </LinearLayout>
+       
+        
+    </LinearLayout>
+    
+</LinearLayout>

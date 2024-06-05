@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <translate
+        android:duration="@integer/default_activity_transition_duration"
+        android:fromXDelta="100%"
+        android:toXDelta="0%" />
+
+</set>

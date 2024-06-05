@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="journey_closed_message" >The current journey is closed. Please contact the administrator.</string>
+    <string name="journey_invalid_start_message" >The current journey triggered a time mismatch. Please contact the administrator.</string>
+    <string name="journey_invalid_end_message" >The current journey triggered a time mismatch. Please contact the administrator.</string>
+    <string name="journey_duplicates_message" >The current journey has been requested twice. Please contact the administrator.</string>
+    <string name="all_journeys_closed_message" >There are no available journeys. Please contact the administrator.</string>
+    <string name="many_opened_journeys_message" >One or more journey did not end properly. Please contact the administrator.</string>
+    <string name="last_opened_journey_invalid_start_message" >The previous journey triggered a time mismatch. Please contact the administrator.</string>
+    
+</resources>

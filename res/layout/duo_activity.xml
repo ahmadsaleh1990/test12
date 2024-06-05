@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_panel_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/icon_logo_solution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/contentDescription" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outer_panel_background"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/label_firm_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.Medium"
+            android:textColor="@color/Black" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/TBResult"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_text"
+                android:paddingRight="30dp"
+                android:text=""
+                android:textColor="@color/Black"
+                android:textColorHint="@color/listview_divider" />
+
+            <include
+                android:id="@+id/button_clear_username"
+                layout="@layout/button_clear" />
+        </FrameLayout>
+
+          <LinearLayout
+              android:id="@+id/layout_button_login"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/button_blue"
+              android:onClick="SendOtp" >
+
+        <ImageView
+            android:id="@+id/icon_button_login"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/key" />
+
+        <TextView
+            android:id="@+id/label_button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="SEND OTP"
+            android:textAppearance="@style/TextAppearance.Large"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+
+  
+ 
+
+    <TextView
+        android:id="@+id/TResult"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.05"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2015 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- Main Collection Screen -->
+    
+	<me.SyncWise.Android.Widgets.CustomLinearLayout
+	    android:id="@+id/layout_main"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="5dip"
+        android:padding="3dip"
+        android:orientation="vertical"
+	    android:background="@drawable/main_panel_background" >
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_payment_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dip"
+	        android:orientation="horizontal" >
+	        
+	        <TextView
+	            android:id="@+id/label_total_payments"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textAppearance="@style/TextAppearance.Large"
+	            android:textStyle="bold"
+	            android:textColor="@color/DeepSkyBlue" />
+	        
+	        <TextView
+	            android:id="@+id/label_total_dues"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textAppearance="@style/TextAppearance.Large"
+	            android:textStyle="bold"
+	            android:textColor="@color/DeepSkyBlue" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dip"
+	        android:orientation="horizontal" >
+	        
+	        <!-- Currency -->
+	        
+	        <Spinner
+	            android:id="@+id/spinner_currencies"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:enabled="false"
+	            android:background="@drawable/spinner_background" />
+	        
+		    <!-- Add Cash button -->
+		    
+		    <LinearLayout
+		        android:id="@+id/layout_button_cash"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_marginRight="5dip"
+		        android:layout_gravity="center_horizontal"
+		        android:onClick="addCash"
+		        android:enabled="false"
+		        android:background="@drawable/button_blue" >
+		        
+				<ImageView
+				    android:id="@+id/icon_button_cash"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="5dp"
+	                android:contentDescription="@string/contentDescription"
+	                android:src="@drawable/add_sign" />
+				
+				<TextView
+				    android:id="@+id/label_button_cash"
+				    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_gravity="center_vertical"
+		        	android:gravity="center"
+		        	android:textColor="@color/White"
+		        	android:textAppearance="@style/TextAppearance.Large"
+		        	android:textStyle="bold" />
+		        
+		    </LinearLayout>
+	        
+		    <!-- Add Check button -->
+		    
+		    <LinearLayout
+		        android:id="@+id/layout_button_check"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_gravity="center_horizontal"
+		        android:onClick="addCheck"
+		        android:enabled="false"
+		        android:background="@drawable/button_blue" >
+		        
+				<ImageView
+				    android:id="@+id/icon_button_check"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="5dp"
+	                android:contentDescription="@string/contentDescription"
+	                android:src="@drawable/add_sign" />
+				
+				<TextView
+				    android:id="@+id/label_button_check"
+				    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_gravity="center_vertical"
+		        	android:gravity="center"
+		        	android:textColor="@color/White"
+		        	android:textAppearance="@style/TextAppearance.Large"
+		        	android:textStyle="bold" />
+		        
+		    </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent" 
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+		    
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	    
+			    <!-- Payments Layouts -->
+			    
+			    <TextView
+			        android:id="@+id/label_payments"
+			        android:minWidth="150dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dip"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        style="@style/TextAppearance.Medium"
+			        android:textStyle="bold"
+			        android:background="@drawable/main_header_background" />
+			    
+				<LinearLayout
+				    android:id="@+id/layout_payments"
+					android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="5dip"
+				    android:layout_marginRight="5dip"
+				    android:layout_marginBottom="5dip"
+				    android:gravity="center_horizontal"
+			        android:padding="3dip"
+				    android:background="@drawable/main_body_background" >
+			        
+				    <!-- Empty View -->
+				    
+					<include layout="@layout/emtpy_list_view"/>
+					
+					<!-- Payments List -->
+				    
+				    <ListView
+				        android:id="@+id/list_payments"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:requiresFadingEdge="vertical"
+						android:divider="@color/listview_divider"
+						android:dividerHeight="1dp"
+						android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+			    
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+				
+			    <!-- Dues Layouts -->
+			    
+			    <TextView
+			        android:id="@+id/label_dues"
+			        android:minWidth="150dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dip"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        style="@style/TextAppearance.Medium"
+			        android:textStyle="bold"
+			        android:background="@drawable/main_header_background" />
+				
+				<LinearLayout
+				    android:id="@+id/layout_dues"
+					android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="5dip"
+				    android:layout_marginRight="5dip"
+				    android:layout_marginBottom="5dip"
+				    android:gravity="center_horizontal"
+			        android:padding="3dip"
+				    android:background="@drawable/main_body_background" >
+				    
+				    <!-- Empty View -->
+				    
+					<include layout="@layout/emtpy_list_view"/>
+					
+					<!-- Dues List -->
+				    
+				    <ListView
+				        android:id="@+id/list_dues"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:requiresFadingEdge="vertical"
+						android:divider="@color/listview_divider"
+						android:dividerHeight="1dp"
+						android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+			    
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</me.SyncWise.Android.Widgets.CustomLinearLayout>
+		
+	<!-- Collection Note - Secondary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_collection_note"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_collection_note"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_note"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updateNote" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Note -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_collection_note"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="textCapSentences|textMultiLine"
+					    android:scrollbars="vertical"
+					    android:fadeScrollbars="false"
+					    android:minLines="6"
+					    android:maxLines="6"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- Collection Manual Reference - Secondary Prime View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_collection_manual_reference"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_collection_manual_reference"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_manual_reference"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updateManualReference" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Note -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_collection_manual_reference"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="textCapSentences|textMultiLine"
+					    android:scrollbars="vertical"
+					    android:fadeScrollbars="false"
+					    android:minLines="6"
+					    android:maxLines="6"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- Payment Cash - Tertiary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_payment_cash"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_payment_cash"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_payment_cash"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updatePaymentCash" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Payment Cash -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="horizontal" >
+					
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_payment_cash"
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="2"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="numberDecimal"
+					    android:scrollbars="vertical"
+					    android:fadeScrollbars="false"
+					    let:line_color="@color/DeepSkyBlue" />
+					
+			        <Spinner
+			            android:id="@+id/spinner_cash_currencies"
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:layout_margin="10dp"
+			            android:enabled="false"
+			            android:background="@drawable/spinner_background" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- Check Cash - Quaternary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_payment_check"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="8"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_payment_check"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_payment_check"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updatePaymentCheck" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Payment Cash -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="vertical" >
+					
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="horizontal" >
+		            
+						<me.SyncWise.Android.Widgets.LinedEditText
+						    xmlns:android="http://schemas.android.com/apk/res/android"
+						    xmlns:let="http://schemas.android.com/apk/res-auto"
+						    android:id="@+id/edittext_payment_check"
+						    android:layout_width="0dp"
+						    android:layout_height="match_parent"
+						    android:layout_weight="2"
+						    android:layout_margin="10dp"
+						    android:background="@drawable/edit_text"
+						    android:textColor="@color/Black"
+						    android:textColorHint="@color/listview_divider"
+						    android:enabled="false"
+						    android:inputType="numberDecimal"
+						    android:scrollbars="vertical"
+						    android:fadeScrollbars="false"
+						    let:line_color="@color/DeepSkyBlue" />
+						
+				        <Spinner
+				            android:id="@+id/spinner_check_currencies"
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:layout_weight="1"
+				            android:layout_margin="10dp"
+				            android:enabled="false"
+				            android:background="@drawable/spinner_background" />
+			        
+			        </LinearLayout>
+			        
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="horizontal" >
+				        
+						<me.SyncWise.Android.Widgets.LinedEditText
+						    xmlns:android="http://schemas.android.com/apk/res/android"
+						    xmlns:let="http://schemas.android.com/apk/res-auto"
+						    android:id="@+id/edittext_check_code"
+						    android:layout_width="0dp"
+						    android:layout_height="match_parent"
+						    android:layout_weight="2"
+						    android:layout_margin="10dp"
+						    android:background="@drawable/edit_text"
+						    android:textColor="@color/Black"
+						    android:textColorHint="@color/listview_divider"
+						    android:enabled="false"
+						    android:inputType="text"
+						    android:scrollbars="vertical"
+						    android:fadeScrollbars="false"
+						    let:line_color="@color/DeepSkyBlue" />
+						
+				        <Spinner
+				            android:id="@+id/spinner_check_banks"
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:layout_weight="1"
+				            android:layout_margin="10dp"
+				            android:enabled="false"
+				            android:background="@drawable/spinner_background" />
+		                
+			        </LinearLayout>
+			        
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal" >
+				        
+					    <!-- Date Picker Button -->
+					    
+					    <ImageButton
+					        android:id="@+id/button_date_picker"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+						    android:layout_marginTop="5dp"
+						    android:layout_marginLeft="20dp"
+						    android:layout_marginBottom="5dp"
+						    android:layout_marginRight="20dp"
+					        android:background="@drawable/segment_button"
+					        android:src="@drawable/calendar_blue"
+					        android:onClick="setCheckDate"
+					        android:enabled="false"
+					        android:contentDescription="@string/contentDescription" />
+					    
+					    <!-- Date Label -->
+					    
+					    <TextView
+					        android:id="@+id/label_date_picker"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:layout_weight="1"
+						    android:layout_marginTop="5dp"
+						    android:layout_marginLeft="20dp"
+						    android:layout_marginBottom="5dp"
+						    android:layout_marginRight="5dp"
+					        android:gravity="center_vertical"
+				  	        android:textAppearance="@style/TextAppearance.Medium"
+					        android:textColor="@color/Black"
+					        android:textStyle="bold"
+					        android:textColorHint="@color/listview_divider" />
+		                
+			        </LinearLayout>
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+	
+	<!-- Paid Amount - Quinary View -->
+	
+	<FrameLayout
+	    android:id="@+id/layout_paid_amount"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#7F000000" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="horizontal" >
+	    
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+	
+		    <!-- Outer Panel -->
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="4"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:background="@drawable/outer_panel_background" >
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical" >
+		            
+					<TextView
+					    android:id="@+id/label_paid_amount"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textAppearance="@style/TextAppearance.Medium"
+					    android:textColor="@color/White"
+					    android:textStyle="bold" />
+					
+					<ImageView
+					    android:id="@+id/icon_save_paid_amount"
+					    android:layout_width="35dp"
+					    android:layout_height="35dp"
+					    android:layout_marginRight="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:src="@drawable/action_save"
+					    android:contentDescription="@string/contentDescription"
+					    android:enabled="false"
+					    android:onClick="updatePaidAmount" />
+		            
+		        </LinearLayout>
+		        
+		        <!-- Inner Panel - Paid Amount -->
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/main_panel_background"
+		            android:padding="10dp"
+		            android:orientation="horizontal" >
+					
+					<me.SyncWise.Android.Widgets.LinedEditText
+					    xmlns:android="http://schemas.android.com/apk/res/android"
+					    xmlns:let="http://schemas.android.com/apk/res-auto"
+					    android:id="@+id/edittext_paid_amount"
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="2"
+					    android:layout_margin="10dp"
+					    android:background="@drawable/edit_text"
+					    android:textColor="@color/Black"
+					    android:textColorHint="@color/listview_divider"
+					    android:enabled="false"
+					    android:inputType="numberDecimal"
+					    android:scrollbars="vertical"
+					    android:fadeScrollbars="false"
+					    let:line_color="@color/DeepSkyBlue" />
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        
+	        <!-- Invisible View  -->
+	        
+	        <View
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1" />
+		    
+	    </LinearLayout>
+	    
+	</FrameLayout>
+
+</FrameLayout>

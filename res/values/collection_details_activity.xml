@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="collection_details_activity_title">COLLECTION</string>
+    <string name="empty_collection_payment_list_label" >No payments.</string>
+    <string name="empty_collection_dues_list_label" >No dues.</string>
+    <string name="collection_note_title" >COLLECTION NOTE</string>
+    <string name="collection_note_hint" >Enter the collection note / remarks.</string>
+    <string name="collection_manual_reference_title" >COLLECTION MANUAL REFERENCE</string>
+    <string name="collection_manual_reference_hint" >Enter the collection manual reference.</string>
+    
+    <string name="collection_mode_on_account_label">ON ACCOUNT PAYMENT</string>
+    <string name="collection_mode_client_dues_label">CLIENT DUES PAYMENT</string>
+    <string name="collection_mode_invoices_label">INVOICES PAYMENT</string>
+    
+    <string name="collection_no_currencies_warning">There are no currencies. Please contact the administrator.</string>
+    <string name="collection_invalid_manual_reference_warning">The manual reference is invalid. Please try again.</string>
+    <string name="collection_invalid_amount_warning">The payment amount is invalid. Please try again.</string>
+    <string name="collection_invalid_check_code_warning">The check code is invalid. Please try again.</string>
+    <string name="collection_similar_check_code_warning">A check code cannot be used twice. Please try again.</string>
+    <string name="collection_invalid_check_date_warning">The check date is invalid. Please try again.</string>
+    <string name="collection_no_banks_warning">There are no banks to select from. Please contact the administrator.</string>
+    <string name="collection_no_payments_done_warning">The collection cannot be saved. Please provide at least one payment and try again.</string>
+    <string name="collection_invalid_payment_warning">The collection cannot be saved. The total dues / invoices should be valid.</string>
+    <string name="collection_payments_dues_inconsistency_warning">The collection cannot be saved. The payements should match the dues / invoices or be within the margins limit.</string>
+    <string name="collection_cash_client_payments_warning">The collection cannot be saved. The dues / invoices should be fully selected for cash clients.</string>
+    <string name="collection_processed_invoice_warning">The collection cannot not be saved because at least one of the invoices has been previously sent to the back office. The list has been cleared and refreshed. Please try again.</string>
+    <string name="collection_no_companies_warning">There are no companies. Please contact the administrator.</string>
+    <string name="collection_no_company_divisions_warning">There are no divisions for the selected company. Please contact the administrator.</string>
+    <string name="collection_mode_dialog_title">Select a payment type</string>
+    <string name="collection_company_dialog_title">Select a company</string>
+    <string name="collection_division_dialog_title">Select a division</string>
+    <string name="paid_amount_label">PAID AMOUNT</string>
+    <string name="payment_cash_label">PAYMENT CASH</string>
+    <string name="payment_check_label">PAYMENT CHECK</string>
+    <string name="collection_payment_hint">Enter the payment amount.</string>
+    <string name="collection_check_code_hint">Enter the check code.</string>
+    <string name="payment_amount_label">Amount</string>
+    <string name="check_code_label">Check code</string>
+    <string name="check_date_label">Check date</string>
+    <string name="payments_label">PAYMENTS</string>
+    <string name="dues_label">DUES</string>
+    <string name="invoices_label">INVOICES</string>
+    <string name="invoice_label">Invoice</string>
+    <string name="total_company_dues_label">Company</string>
+    <string name="collection_paid_amount_label">Paid amount</string>
+	<string name="collection_original_amount_label">Original amount</string>
+	<string name="collection_remaining_amount_label">Remaining amount</string>
+	<string name="collection_overdue_amount_label">Overdue amount</string>
+	<string name="collection_total_payments_label">Total payments</string>
+	<string name="collection_total_dues_label">Total dues</string>
+	<string name="collection_total_invoices_label">Total invoices</string>
+    <string name="invoice_code_label">Invoice code</string>
+    <string name="issue_date_label">Issue date</string>
+    <string name="due_date_label">Due date</string>
+    <string name="overdue_label">OVERDUE</string>
+    
+    <string name="collection_save_success_message" >Collection successfully saved.</string>
+    <string name="collection_save_failure_message" >Collection could not be saved.</string>
+        
+</resources>

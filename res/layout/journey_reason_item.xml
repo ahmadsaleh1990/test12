@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <!-- Reason status (valid / invalid) -->
+    
+    <ImageView
+        android:id="@+id/icon_reason_status"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/contentDescription" />
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical" >
+    
+        <!-- Day label -->
+        
+	    <TextView
+	        android:id="@+id/label_calendar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/Black"
+	        android:textAppearance="@style/TextAppearance.Medium"
+	        android:padding="5dp" />
+    
+	    <!-- Reasons spinner -->
+	    
+	    <Spinner
+	        android:id="@+id/spinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:background="@drawable/spinner_background" />
+	    
+    </LinearLayout>
+    
+</LinearLayout>

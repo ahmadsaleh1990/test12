@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<!-- Menu Item -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+    
+    <!-- Menu Item - Icon -->
+    
+    <ImageView
+        android:id="@+id/icon_menu_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/contentDescription" />
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:paddingRight="30dp"
+        android:orientation="vertical" >
+        
+        <!-- Menu Item - Title -->
+        
+        <TextView
+            android:id="@+id/label_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:textColor="@color/Black"
+            android:textAppearance="@style/TextAppearance.Medium"
+            android:textStyle="bold" />
+        
+        <!-- Main Menu Item - Description -->
+        
+        <TextView
+            android:id="@+id/label_menu_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/listview_divider"
+            android:textAppearance="@style/TextAppearance.Small" />
+        
+    </LinearLayout>
+
+</LinearLayout>

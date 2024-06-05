@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2015 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="movement_activity_title" >MOVEMENTS</string>
+    <string name="movement_label" >Movement</string>
+    <string name="empty_movement_list_label" >No movements.</string>
+    <string name="no_movement_message" >There are no movements.</string>
+    <string name="movement_passcode_hint" >Enter the passcode.</string>
+    <string name="movement_no_vehicle_message">The user has no assigned vehicle. Please contact the administrator.</string>
+	<string name="movement_invalid_expiry_date_message">Please provide an expiry date.</string>
+	<string name="movement_already_processed_message" >Movement could not be saved / modified because it has been previously sent to the back office.</string>
+	<string name="movement_invalid_reason_message">Please provide a reason.</string>
+	<string name="movement_passcode_required_message">Please contact the administrator / supervisor to get a passcode.</string>
+	<string name="movement_unload_limit_exceeded_message">You have exceed the Vehicle Stock limit by :</string>
+	<string name="movement_unload_equal_exceeded_message">Quantity must equal to Quantity in Vehicle Stock:</string>
+	<string name="movement_unload_not_exceeded_message">Not exist in Vehicle Stock</string>
+	<string name="movement_load_limit_exceeded_message">You have exceed the volume load limit by :</string>
+	<string name="movement_price_limit_exceeded_message">You have exceed the credit limit by :</string>
+	<string name="movement_suggestion_exceeded_message">You cannot exceed the suggested values. Please try again.</string>
+	<string name="movement_expiry_date_inconsistency_message">Expiry date inconsistency. Please try again.</string>
+	<string name="movement_reason_inconsistency_message">Reason inconsistency. Please try again.</string>
+	<string name="movement_missing_user_account_message">You do not have a client account number. Please contact the administrator.</string>
+	<string name="movement_approval_password_label">INPUT PASSWORD</string>
+	<string name="movement_approval_barcode_label">SCAN BARCODE</string>
+	<string name="movement_warehouse_keeper_approval">Warehouse keeper approval</string>
+	<string name="movement_warehouse_keeper_approve_label">APPROVE</string>
+	<string name="movement_warehouse_keeper_load_approve_label">END LOADING TIME</string>
+	<string name="movement_warehouse_keeper_unload_approve_label">END UNLOADING TIME</string>
+	<string name="movement_warehouse_keeper_movement_approve_label">END TIME</string>
+	<string name="movement_cash_van_approval">Cash Van Confirmation</string>
+	<string name="movement_cash_van_approve_label">CONFIRM</string>
+	<string name="movement_select_user_message">Please select a user and try again.</string>
+    <string name="movement_details_label" >MOVEMENT DETAILS</string>
+    <string name="movement_products_label" >MOVEMENT PRODUCTS</string>
+    <string name="movement_van_type_dialog_title">SELECT VAN TRANSFER TYPE</string>
+    <string name="barcode_hint">Enter the barcode</string>
+    <string name="no_warehouse_barcode_message">The warehouse barcode is not found, please contact the administrator.</string>
+    
+    <!-- Movement Types -->
+    <string name="movement_type_load_request_label" >LOAD REQUEST</string>
+    
+    <string name="movement_type_physical_direct_load_label" > DIRECT LOAD </string>
+    <string name="movement_type_physical_direct_Unload_label" > DIRECT UNLOAD </string>
+    <string name="movement_type_load_label" >LOAD</string>
+    <string name="movement_type_unload_request_label" >UNLOAD REQUEST</string>
+    <string name="movement_type_unload_label" >UNLOAD</string>
+    <string name="movement_type_stock_reconciliation_label" >STOCK RECONCILIATION</string>
+    <string name="movement_type_stock_management_label" >STOCK MANAGEMENT</string>
+    <string name="movement_type_van_stock_count_label" >VAN STOCK COUNT</string>
+    <string name="movement_type_van_transfer_label" >VAN TRANSFER</string>
+    
+    <string name="movement_type_van_transfer_in_label" >VAN TRANSFER IN</string>
+    <string name="movement_type_van_transfer_out_label" >VAN TRANSFER OUT</string>
+    
+    <!-- Movement Statuses -->
+    <string name="movement_status_pending_label" >Pending</string>
+    <string name="movement_status_loaded_label" >Loaded</string>
+    <string name="movement_status_unloaded_label" >Unloaded</string>
+    
+    <!-- Movement baguette messages -->
+    <string name="movement_delete_success_message" >Movement successfully deleted.</string>
+    <string name="movement_delete_failure_message" >Movement could not be deleted.</string>
+    <string name="movement_save_success_message" >Movement successfully saved.</string>
+    <string name="movement_save_failure_message" >Movement could not be saved.</string>
+    
+    <!-- Quick Action Items -->
+    <string name="movement_load_label" >Load</string>
+    <string name="movement_unload_label" >Unload</string>
+    
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+         	android:layout_width="match_parent"
+	    android:layout_height="wrap_content">  
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/main_panel_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/listview_divider_light"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="MSL Target"
+            android:textAppearance="@style/TextAppearance.Medium"
+            android:textColor="@color/Black"
+            android:layout_marginBottom="6dp"
+            android:textStyle="bold" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart_Monthly"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/main_panel_background"
+        android:orientation="vertical"
+         android:gravity="center"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/listview_divider_light"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="New SKU Target"
+            android:textAppearance="@style/TextAppearance.Medium"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+             />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart_daily"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        
+    </LinearLayout>
+
+       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/main_panel_background"     
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_margin="5dp"   >
+        
+             <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:id="@+id/description_daily"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+             
+             <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+             >
+              <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:id="@+id/total_target"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+               <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:text="Remainig Days :"
+                    android:id="@+id/remainig_days"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+                              
+             </LinearLayout>
+        
+             
+   
+          
+            
+       <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+             >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:id="@+id/WorkingDays"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:id="@+id/BalanceDays"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+          </LinearLayout>   
+          
+            <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+             >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:text="Valid From :"
+                    android:id="@+id/valid_from_daily"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/listview_divider_light"
+                    android:shadowRadius="10"
+                    android:text="Valid To :"
+                    android:id="@+id/valid_to_daily"
+                    android:textAppearance="@style/TextAppearance.Small"
+                    android:textColor="@color/Black" />
+          </LinearLayout> 
+     </LinearLayout>
+</LinearLayout>
+</ScrollView>

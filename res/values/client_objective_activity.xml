@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="client_objective_activity_title" >TO-DO LIST</string>
+    
+    <string name="empty_client_objectives_list_label" >No objectives.</string>
+    
+    <string name="complete_client_objective_confirmation" >Complete objective ?</string>
+    
+    <string name="client_objective_cancellation_label" >Client Objective Cancellation</string>
+    
+    <string name="objective_note_hint" >Objective Note</string>
+    
+    <string name="pending_client_objectives_label" >PENDING OBJECTIVES</string>
+    <string name="completed_client_objectives_label" >COMPLETED OBJECTIVES</string>
+    <string name="cancelled_client_objectives_label" >CANCELLED OBJECTIVES</string>
+    
+    <!-- Objectives baguette messages -->
+    <string name="client_objective_save_success_message" >Objective successfully saved.</string>
+    <string name="client_objective_save_failure_message" >Objective could not be saved.</string>
+    <string name="client_objective_cancelled_successfully_message" >The objective has been cancelled.</string>
+    <string name="client_objective_completed_successfully_message" >The objective has been completed.</string>
+    
+</resources>

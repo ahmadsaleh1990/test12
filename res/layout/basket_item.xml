@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2015 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <!-- Basket Item - Icon -->
+
+    <ImageView
+        android:id="@+id/icon_item_item"
+        android:layout_marginLeft="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/collection" />
+
+    <!-- Basket Item - Name -->
+
+    <TextView
+        android:id="@+id/label_basket"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:shadowColor="@color/listview_divider_light"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
+    
+    <!-- Basket Item - Quantity -->
+
+    <TextView
+        android:id="@+id/label_basket_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:textColor="@color/Blue"
+        android:textStyle="bold" />
+
+</LinearLayout>

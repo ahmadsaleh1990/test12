@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+	<string name="home_screen_activity_title" >HOME SCREEN</string>
+    
+	<string name="clients_title" >PROSPECTS LIST</string>
+    <string name="clients_description" >List of all clients.</string>
+    
+    <string name="items_title" >PRODUCTS REVIEW</string>
+    <string name="items_description" >List of all products.</string>
+    
+    <string name="cycle_planning_title" >CYCLE PLANNING</string>
+    <string name="cycle_planning_description" >Agenda and schedules routing.</string>
+    
+    <string name="journey_title" >START JOURNEY</string>
+    <string name="journey_description" >Visits records on a daily and weekly bases, along with out of route calls.</string>
+
+    <string name="all_visit_notes_title" >VISIT NOTES</string>
+    <string name="all_visit_notes_description" >List of visit notes to check any previous feedback or remarks.</string>
+    
+    <string name="all_clients_objectives_title" >ASSESS PROSPECTS OBJECTIVES</string>
+    <string name="all_clients_objectives_description" >List of objectives to manage clients related tasks.</string>
+
+    <string name="load_request_title" >LOAD REQUEST</string>
+    <string name="load_request_description" >Load Request</string>
+    
+    <string name="physical_direct_load_title" > DIRECT LOAD</string>
+    <string name="physical_direct_load_description" > Direct Load</string>
+    
+    <string name="physical_direct_unload_title" > DIRECT UNLOAD</string>
+    <string name="physical_direct_unload_description" > Direct UnLoad</string>
+    
+    <string name="unload_request_title" >UNLOAD REQUEST</string>
+    <string name="unload_request_description" >Unload Request</string>
+    
+    <string name="load_title" >LOAD</string>
+    <string name="load_description" >Load</string>
+    
+    <string name="unload_title" >UNLOAD</string>
+    <string name="unload_description" >Unload</string>
+    
+    <string name="stock_reconciliation_title" >STOCK RECONCILIATION</string>
+    <string name="stock_reconciliation_description" >Stock reconciliation</string>
+    
+    <string name="stock_management_title" >STOCK MANAGEMENT</string>
+    <string name="stock_management_description" >Stock management</string>
+    
+    <string name="van_transfer_title" >VAN TRANSFER</string>
+    <string name="van_transfer_description" >Van transfer</string>
+    
+    <string name="van_stock_count_title" >VAN STOCK COUNT</string>
+    <string name="van_stock_count_description" >Van stock count</string>
+    
+    <string name="summary_title" >SUMMARY</string>
+    <string name="summary_description" >Summary of actions performed over clients.</string>
+    
+    <string name="visit_note_label" >Visit Note Label</string>
+    <string name="note_visit_contacts_label" >Note : </string>
+       <string name="note_objective_contacts_label" >Objective : </string>
+    
+    <string name="target_title" >TARGET COVERAGE</string>
+    <string name="target_description" >Total coverage and goals tracking.</string>
+    
+    <string name="visit_history_title" >VISITS HISTORY</string>
+    <string name="visit_history_description" >Visits statistics and history over the past 4 weeks.</string>
+    
+    <string name="achievements_review_title" >ACHIEVEMENTS REVIEW</string>
+    <string name="achievements_review_description" >Attendance and accomplishments sheet.</string>
+        <string name="data_daily_target" >TARGET ACHIEVEMENT</string>
+    <string name="self_assessment_title" >CONFERENCE ANALYSIS</string>
+    <string name="self_assessment_description" >Reservation and evaluation feedback.</string>
+    
+    <string name="supervisor_assessment_title" >ASSESSEMENT</string>
+    <string name="supervisor_assessment_description" >Evaluation sheet review filled by supervisors.</string>
+    
+    <string name="end_journey_title" >END JOURNEY REPORT</string>
+    <string name="end_journey_description" >End journey report.</string>
+    <string name="end_journey_toast" >NO DATA AVAILABLE.</string>
+    
+    <string name="messages_title" >MESSAGES</string>
+    <string name="messages_description" >Communicate with other users via messages.</string>
+    <string name="print_labelww">Printer Cofiguration</string>
+    <string name="chat_title" >CHAT</string>
+    <string name="chat_description" >Online chat communication over the Internet.</string>
+    
+    <string name="vehicles_stock_title" >VIEW STOCK</string>
+    <string name="vehicles_stock_description" >Availability and status of products in your inventory.</string>
+    
+    <string name="data_management_title" >DATA MANAGEMENT</string>
+    <string name="data_management_description" >Data backup and recovery service.</string>
+    
+    <string name="end_visit_title" >END VISIT</string>
+    <string name="end_visit_description" >End the current visit.</string>
+    
+    <string name="brochures_title" >BROCHURES</string>
+    <string name="brochures_description" >Browse PDF files.</string>
+    
+	  <string name="sales_summary_title" >SALES SUMMARY</string>
+    <string name="sales_summary_description" >Summary of sales performed over clients.</string>
+</resources>

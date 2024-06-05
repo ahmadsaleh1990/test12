@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ImageButton android:id="@+id/icon_increment"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/tinynumberpicker_up_btn"
+        android:contentDescription="@string/contentDescription" />
+
+    <EditText
+        android:id="@+id/numberpicker_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.Large"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@drawable/numberpicker_input"
+        android:imeOptions="actionNone" />
+
+    <ImageButton android:id="@+id/icon_decrement"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/tinynumberpicker_down_btn"
+        android:contentDescription="@string/contentDescription" />
+
+</merge>

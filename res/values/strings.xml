@@ -1,0 +1,200 @@
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+
+    <string name="app_name">SyncWise</string>
+    <string name="company_profile_description">SYNCWISE is based on two units synchronized wisely spreading information and software solutions.\n
+        Similarly, the brain functions and spreads its Neurons in the human body.\n\n
+        Being wise suggests power.\nThe power to provide continuous solutions for any business needs.\n\n
+        SYNCWISE tells a story of belief in the individual through the core value of commitment to an idea, to provide efficient communication and information.</string>
+
+    <!-- Shared Labels -->
+    <string name="welcome_label">Welcome</string>
+    <string name="ok_label">OK</string>
+    <string name="Cash_label">Cash</string>
+    <string name="confirm_label">Confirm</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="cancelled_label">Cancelled</string>
+    <string name="complete_label">Complete</string>
+    <string name="completed_label">Completed</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="yes_label">Yes</string>
+    <string name="no_label">No</string>
+    <string name="start_label">Start</string>
+    <string name="settings_label">Settings</string>
+    <string name="suggested_label">Suggested</string>
+    <string name="suggested_label1">Suggest</string>
+    <string name="code_label">Code</string>
+    <string name="item_code_label">Item Code</string>
+    <string name="item_barcode_label">Item Barcode</string>
+    <string name="client_ItemCode_label">client ItemCode</string>
+    <string name="vehicle_label">Vehicle</string>
+    <string name="title_label">Title</string>
+    <string name="type_label">Type</string>
+    <string name="cash_label">Cash</string>
+    <string name="credit_label">Credit</string>
+    <string name="check_label">Check</string>
+    <string name="phone_label">Phone</string>
+    <string name="status_label">Status</string>
+    <string name="existence_label">Existence</string>
+    <string name="active_label">Active</string>
+    <string name="inactive_label">Inactive</string>
+    <string name="total_oustanding">Total Outstanding</string>
+    <string name="total_overdue_amount">Total Over Dues</string>
+    <string name="total_credit_limit_amount">Total Credit Limit</string>
+	<string name="search_label">Search</string>
+	<string name="warning_label">Warning</string>
+	<string name="error_label">Error</string>
+	<string name="add_label">Add</string>
+	<string name="view_label">View</string>
+	<string name="edit_label">Edit</string>
+	<string name="camera_label">Camera</string>
+	<string name="save_label">Save</string>
+	<string name="delete_label">Delete</string>
+	<string name="clear_label">Clear</string>
+	<string name="new_label">New</string>
+	<string name="mark_label">Mark All</string>
+	<string name="unmark_label">Unmark All</string>
+	<string name="filter_label">Filter</string>
+	<string name="expand_label">Expand</string>
+	<string name="narrow_label">Narrow</string>
+	<string name="list_label">List</string>
+	<string name="information_label">Information</string>
+	<string name="company_label">Company</string>
+	<string name="balance_label">Balance</string>
+	<string name="remarks_label">Remarks</string>
+	<string name="info_label">Info</string>
+	<string name="export_label">Export</string>
+	<string name="import_label">Import</string>
+	<string name="print_label">Print</string>
+	<string name="update_label">Update</string>
+	<string name="tax_label">Tax</string>
+	<string name="free_label">Free Unit</string>
+	<string name="free_label_case">Free Case</string>
+	<string name="discount_label">Discount</string>
+	<string name="loading_label">Loading</string>
+	<string name="reload_label">Reload</string>
+	<string name="selected_label">Selected</string>
+	<string name="deleted_label">Deleted</string>
+	<string name="total_of_label">Total of</string>
+	<string name="total_label">Total</string>
+	<string name="price_label">Price</string>
+	<string name="duration_label">Duration</string>
+	<string name="priority_label">Priority</string>
+	<string name="passcode_label">PASSCODE</string>
+	<string name="invalid_selection_label">Invalid selection.</string>
+	<string name="connecting_label">Connecting</string>
+    <string name="version_label">Version</string>
+    <string name="not_available_abbreviation">NA</string>
+    <string name="firm_license_label">Licensed to</string>
+    <string name="user_label">User</string>
+    <string name="email_label" >Email</string>
+    <string name="address_label" >Address</string>
+    <string name="fax_label" >Fax</string>
+    <string name="currency_label" >Currency</string>
+	<string name="bank_label">Bank</string>
+    <string name="vat_number_label" >VAT Number</string>
+    <string name="parent_client_label" >Parent Client</string>
+    <string name="classification_label">Classification</string>
+    <string name="division_label">Division</string>
+    <string name="contacts_label" >Contacts</string>
+    <string name="quantity_label">Quantity</string>
+      <string name="collapse_message" >Please collaspse.</string>
+    <string name="counted_label">Counted</string>
+    <string name="description_label" >Description</string>
+    <string name="note_label" >Note</string>
+    <string name="out_of_label">out of</string>
+    <string name="scheduled_label">Scheduled</string>
+	<string name="unscheduled_label">Unscheduled</string>
+    <string name="reason_label">Reason</string>
+    <string name="ordered_label" >ORDERED</string>
+    <string name="offered_label" >OFFERED</string>
+    
+    <!-- Shared Messages -->
+    <string name="connecting_server_message">Establishing network connection to server.</string>
+    <string name="no_network_connection_message">No internet connection.</string>
+    <string name="no_network_connection_message1">The server appears to be down or is unreachable.</string>
+    <string name="server_not_reachable_message">The server appears to be down or is unreachable.</string>
+    <string name="invalid_activity_message">MODULE NOT AVAILABLE</string>
+    <string name="error_field_required_message">This field is required</string>
+    <string name="exit_confirmation_message">Exit application ?</string>
+    <string name="log_out_confirmation_message">Log out ?</string>
+    <string name="no_new_modifications_message" >There are no modifications to save.</string>
+    <string name="no_new_modifications_message1" >There are no modifications to save or have 0 values need to fill all.</string>
+    <string name="save_confirmation_message" >Are you sure you want to save ?</string>
+    <string name="delete_confirmation_message" >Are you sure you want to delete ?</string>
+    <string name="discard_changes_confirmation_message">All changes will be discarded.</string>
+    <string name="regular_passcode_invalid_message">The passcode you have provided is invalid. Please try again.</string>
+    <string name="time_passcode_invalid_message">The passcode you have provided is either invalid of has timed out. Please try again.</string>
+    
+    <!-- Days Abbreviations -->
+    <string name="monday_abbreviation">MO</string>
+    <string name="tuesday_abbreviation">TU</string>
+    <string name="wednesday_abbreviation">WE</string>
+    <string name="thursday_abbreviation">TH</string>
+    <string name="friday_abbreviation">FR</string>
+    <string name="saturday_abbreviation">SA</string>
+    <string name="sunday_abbreviation">SU</string>
+    
+    <!-- Calendar Labels -->
+    <string name="availability_label" >Availability</string>
+    <string name="at_label">at</string>
+    <string name="from_label">from</string>
+    <string name="to_label">to</string>
+    <string name="am_label">AM</string>
+    <string name="pm_label">PM</string>
+	<string name="today_label">Today</string>
+	<string name="yesterday_label">Yesterday</string>
+	<string name="name_label">Name</string>
+	<string name="date_of_birth_label">Date Of Birth</string>
+	<string name="age_label">Age</string>
+	<string name="date_label">Date</string>
+	<string name="passcode_required_message"> No Permission To Change Date!\n Please contact the Administrator for a Passcode.</string>
+  
+	<string name="day_label">Day</string>
+	<string name="week_label">Week</string>
+	<string name="weeks_label">Week(s)</string>
+	<string name="current_week_label">Current week</string>
+	<string name="one_week_ago_label">Last week</string>
+	<string name="weeks_ago_label">week(s) ago</string>
+	<string name="month_label">Month</string>
+	<string name="year_label">Year</string>
+	<string name="years_old_label">years old</string>
+	<string name="cycle_label">Cycle</string>
+    <string name="monday_label">MONDAY</string>
+    <string name="tuesday_label">TUESDAY</string>
+    <string name="wednesday_label">WEDNESDAY</string>
+    <string name="thursday_label">THURSDAY</string>
+    <string name="friday_label">FRIDAY</string>
+    <string name="saturday_label">SATURDAY</string>
+    <string name="sunday_label">SUNDAY</string>
+    <string name="january_label">JANUARY</string>
+    <string name="february_label">FEBRUARY</string>
+    <string name="march_label">MARCH</string>
+    <string name="april_label">APRIL</string>
+    <string name="may_label">MAY</string>
+    <string name="june_label">JUNE</string>
+    <string name="july_label">JULY</string>
+    <string name="august_label">AUGUST</string>
+    <string name="september_label">SEPTEMBER</string>
+    <string name="october_label">OCTOBER</string>
+    <string name="november_label">NOVEMBER</string>
+    <string name="december_label">DECEMBER</string>
+    <string name="receipt_label">Receipt</string>
+    
+    <!-- Special characters -->
+    <string name="plus_sign">+</string>
+    <string name="minus_sign">-</string>
+    <string name="percentage_sign">%</string>
+    
+    <!-- Content Description -->
+    <string name="contentDescription">ImageView</string>
+</resources>

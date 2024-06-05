@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Menu Item -->
+    
+	<include layout="@layout/menu_item" />
+	
+	<!-- Arrow -->
+	
+	<ImageView
+	    android:id="@+id/arrow_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center_vertical|right"
+        android:src="@drawable/arrow_right_black"
+        android:contentDescription="@string/contentDescription" />
+
+	<!-- Check Box -->
+	
+	<CheckBox
+	    android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:checked="true"
+        android:focusable="false"
+        android:clickable="false" />
+	
+	<!-- Notification Number -->
+		
+	<include layout="@layout/notification_number"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_gravity="top|right"
+	    android:layout_marginRight="35dp"
+    	android:layout_marginTop="5dp" />
+	
+	<!-- Disabled Icon -->
+		
+	<ImageView android:id="@+id/icon_disabled"
+	    android:layout_width="20dp"
+	    android:layout_height="20dp"
+	    android:layout_marginRight="8dp"
+	    android:layout_gravity="center_vertical|right"
+	    android:src="@drawable/cancel"
+	    android:contentDescription="@string/contentDescription" />
+	
+</FrameLayout>

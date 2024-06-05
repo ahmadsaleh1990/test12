@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="journey_activity_title" >OPPORTUNITIES</string>
+    
+    <string name="daily_visits" >DAILY VISITS</string>
+    <string name="weekly_visits" >WEEKLY VISITS</string>
+    <string name="out_of_route_visits" >OUT OF ROUTE</string>
+    
+    <string name="empty_visits_list_label" >No visits.</string>
+    
+    <string name="journey_passcode_required_message">There is at least one remaining scheduled call.\nPlease contact the administrator / supervisor to get a passcode.</string>
+    <string name="user_account_passcode_required_message">Please contact the administrator / supervisor to get a passcode in order to perform a visit on your related account.</string>
+    
+    <!-- Quick Action Items -->
+    <string name="quick_action_visit_label" >Make Visit</string>
+    <string name="quick_action_call_label" >Make Call</string>
+    <string name="quick_action_cancel_visit_label" >Cancel Meeting</string>
+    <string name="quick_action_client_info_label" >Client Info</string>
+    
+    <!-- Baguette Messages -->
+    <string name="no_client_barcode_reasons_message">No client barcode reason found, please contact the administrator.</string>
+    <string name="client_barcode_not_found_message">The scanned client barcode was not found, please contact the administrator.</string>
+    <string name="client_barcode_scan_error_message">An error occurred during the client barcode scan.</string>
+    <string name="item_barcode_not_found_message">The scanned item barcode was not found</string>
+    <string name="item_barcode_scan_error_message">An error occurred during the item barcode scan.</string>
+    <string name="client_not_active_message">Cannot perform a visit / call because the client is inactive / blocked.</string>
+    <string name="visit_ended_message" >The visit / call has successfully ended.</string>
+    <string name="visit_cancelled_message" >The visit / call has been cancelled.</string>
+    
+    <!-- Dialog Messages -->
+    <string name="no_barcode_reasons_list_dialog_title" >No barcode reason</string>
+    <string name="visit_cancelled_client_message" >This client call has been previously cancelled. Do you want to perform a visit / call  ?</string>
+    <string name="client_cash_client_message" >This Client has Cash invoice. please Collect. </string>
+    <string name="client_credit_client_message" >This Client has Credit invoice. please Collect. </string>
+</resources>

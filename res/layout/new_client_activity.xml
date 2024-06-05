@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<FrameLayout 
+	    android:id="@+id/layout_client_card"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/LightSkyBlue" >
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:background="@color/RoyalBlue"
+	        android:layout_gravity="top" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	   	    android:layout_marginTop="45dp"
+	        android:layout_marginBottom="2dp"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="120dp"
+	        android:orientation="horizontal"
+	        android:background="#2A000000" >
+	        
+		    <TextView
+		        android:id="@+id/label_client_name"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textAppearance="@style/TextAppearance.Medium"
+		        android:textColor="@color/Black"
+		        android:textStyle="bold"
+		        android:text="@string/new_client_activity_title"
+		        android:paddingTop="5dp"
+		        android:paddingBottom="5dp"
+		        android:paddingLeft="5dp"
+		        android:paddingRight="5dp" />
+	    
+	    </LinearLayout>
+	    
+	    <ImageView
+	        android:id="@+id/icon_client_card"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_gravity="left|top"
+	        android:layout_margin="15dp"
+	        android:background="@drawable/black_rounded_rectangle"
+	        android:src="@drawable/new_client_card"
+	        android:contentDescription="@string/contentDescription" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:background="@color/RoyalBlue"
+	        android:layout_gravity="bottom" />
+	    
+	</FrameLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_account_number_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_account_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_client_name_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_client_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_client_phone_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_client_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_client_mobile_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_client_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_client_fax_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_client_fax"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_client_address_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_client_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_client_email_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_client_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_financial_number_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_financial_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_cnss_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_cnss"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_syndicate_number_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_syndicate_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textAppearance="@style/TextAppearance.Large"
+                    android:textStyle="bold"
+                    android:text="@string/new_client_license_number_label"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/spinner_background" />
+                    
+                <EditText
+                    android:id="@+id/new_client_license_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="13"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_text" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

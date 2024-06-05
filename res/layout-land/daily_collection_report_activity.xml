@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2015 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- Main Collection Screen -->
+    
+	<me.SyncWise.Android.Widgets.CustomLinearLayout
+	    android:id="@+id/layout_main"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="5dip"
+        android:padding="3dip"
+        android:orientation="vertical"
+	    android:background="@drawable/main_panel_background" >
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent" 
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:orientation="horizontal" >
+		    
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	    
+			    <!-- Cash Layouts -->
+			    
+			    <TextView
+			        android:id="@+id/label_cash"
+			        android:minWidth="150dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dip"
+			        android:layout_marginLeft="5dip"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        style="@style/TextAppearance.Medium"
+			        android:textStyle="bold"
+			        android:background="@drawable/main_header_background" />
+			    
+				<LinearLayout
+				    android:id="@+id/layout_cash"
+					android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="5dip"
+				    android:layout_marginRight="5dip"
+				    android:layout_marginBottom="5dip"
+				    android:gravity="center_horizontal"
+			        android:padding="3dip"
+				    android:background="@drawable/main_body_background" >
+			        
+				    <!-- Empty View -->
+				    
+					<include layout="@layout/emtpy_list_view"/>
+					
+					<!-- Cash List -->
+				    
+				    <ListView
+				        android:id="@+id/list_cash"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:requiresFadingEdge="vertical"
+						android:divider="@color/listview_divider"
+						android:dividerHeight="1dp"
+						android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+			    
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+				
+			    <!-- Check Layouts -->
+			    
+			    <TextView
+			        android:id="@+id/label_check"
+			        android:minWidth="150dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dip"
+			        android:layout_marginLeft="5dip"
+			        android:paddingLeft="10dp"
+			        android:paddingRight="10dp"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        style="@style/TextAppearance.Medium"
+			        android:textStyle="bold"
+			        android:background="@drawable/main_header_background" />
+				
+				<LinearLayout
+				    android:id="@+id/layout_check"
+					android:layout_width="match_parent"
+				    android:layout_height="0dip"
+				    android:layout_weight="1"
+				    android:layout_marginLeft="5dip"
+				    android:layout_marginRight="5dip"
+				    android:layout_marginBottom="5dip"
+				    android:gravity="center_horizontal"
+			        android:padding="3dip"
+				    android:background="@drawable/main_body_background" >
+				    
+				    <!-- Empty View -->
+				    
+					<include layout="@layout/emtpy_list_view"/>
+					
+					<!-- Check List -->
+				    
+				    <ListView
+				        android:id="@+id/list_check"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:requiresFadingEdge="vertical"
+						android:divider="@color/listview_divider"
+						android:dividerHeight="1dp"
+						android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+			    
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</me.SyncWise.Android.Widgets.CustomLinearLayout>
+
+</FrameLayout>

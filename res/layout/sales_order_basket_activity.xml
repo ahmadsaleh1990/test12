@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/main_panel_background"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <include layout="@layout/emtpy_list_view" />
+
+        <ExpandableListView
+            android:id="@+id/basket_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</LinearLayout>

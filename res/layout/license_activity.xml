@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- Solution Logo -->
+    
+    <ImageView
+        android:id="@+id/icon_logo_solution"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top"
+        android:contentDescription="@string/contentDescription"/>
+    
+    <!-- Activate Panel -->
+    
+	<LinearLayout 
+	    android:id="@+id/layout_activate_panel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="5dp"
+	    android:orientation="vertical"
+	    android:background="@drawable/outer_panel_background" >
+	    
+	    <!-- Firm License Indication -->
+	    
+	    <TextView
+	        android:id="@+id/label_firm_license"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textAppearance="@style/TextAppearance.Medium"
+	        android:textColor="@color/Black" />
+	    
+	    <!-- Activate Inner Panel -->
+	    
+	    <LinearLayout
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/main_panel_background"
+	        android:padding="10dp"
+	        android:orientation="vertical" >
+		
+		    <!-- Serial Code field -->
+		        
+		    <EditText
+		        android:id="@+id/edittext_serial_code"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:background="@drawable/edit_text"
+		        android:paddingRight="30dp"
+		        android:textColor="@color/Black"
+		        android:textColorHint="@color/listview_divider"
+		        android:inputType="text" />
+		    
+		    <!-- License key field -->
+		    
+		    <FrameLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+		    
+			    <EditText
+			        android:id="@+id/edittext_license"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/edit_text"
+			        android:paddingRight="30dp"
+			        android:textColor="@color/Black"
+			        android:textColorHint="@color/listview_divider"
+			        android:singleLine="true"
+			        android:imeOptions="actionGo" />
+		    
+			    <include layout="@layout/button_clear"
+			        android:id="@+id/button_clear_license" />
+		    
+			</FrameLayout>
+			    
+		    <!-- Activate button -->
+		    
+		    <LinearLayout
+		        android:id="@+id/layout_button_activate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:onClick="activate"
+		        android:background="@drawable/button_blue" >
+		        
+				<ImageView
+				    android:id="@+id/icon_button_activate"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="5dp"
+	                android:contentDescription="@string/contentDescription"
+	                android:src="@drawable/key" />
+				
+				<TextView
+				    android:id="@+id/label_button_activate"
+				    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:layout_gravity="center_vertical"
+		        	android:gravity="center"
+		        	android:textColor="@color/White"
+		        	android:textAppearance="@style/TextAppearance.Large"
+		        	android:textStyle="bold" />
+		        
+		    </LinearLayout>
+	    
+		</LinearLayout>
+	
+	</LinearLayout>
+	
+    <!-- Application Version -->
+    
+    <!-- Due to a bug, android:layout_gravity cannot be applied in XML for the include tag.
+    It is applied programmatically. -->
+    <include layout="@layout/textview_app_version" />
+	
+</merge>

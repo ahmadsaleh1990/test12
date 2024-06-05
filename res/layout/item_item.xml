@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<!-- Item Item -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <!-- Item Item - Icon -->
+
+    <LinearLayout
+        android:id="@+id/label_promo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/icon_item_item"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/boxes" />
+
+        <ImageView
+            android:id="@+id/label_master_item"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/contentDescription"
+            android:visibility="gone"
+            android:src="@drawable/master_star" />
+
+        <ImageView
+            android:id="@+id/label_ins_promo"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/ins_promo" />
+
+        <ImageView
+            android:id="@+id/label_basket_promo"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/basket_promo" />
+
+        <ImageView
+            android:id="@+id/label_free_promo"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/free_icon" />
+			
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+		android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical" >
+		
+        <!-- Item Item - Name -->
+		
+        <TextView
+            android:id="@+id/label_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Medium"
+			android:textColor="@color/Black"
+			android:textStyle="bold"
+			android:maxLines="4"
+            android:shadowColor="@color/listview_divider_light"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- Item Item - Code -->
+
+            <TextView
+                android:id="@+id/label_item_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="@style/TextAppearance.Small"
+                android:textColor="@color/DeepSkyBlue" />
+
+            <!-- Item Item - Tax -->
+
+            <TextView
+                android:id="@+id/label_item_tax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.Small"
+                android:textColor="@color/DeepSkyBlue" />
+        
+        </LinearLayout>
+		
+    </LinearLayout>
+    <LinearLayout
+		android:id="@+id/layout_reason"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.5"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal"
+		android:visibility="gone" >
+   
+	 <TextView
+	    android:id="@+id/lable_reason"
+	    android:text="Reason:"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    	android:visibility="gone" />
+	
+		<Spinner
+	    android:id="@+id/reason_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+ 
+	    android:padding="2dp"
+	    android:visibility="gone" />
+    
+		
+	</LinearLayout>
+	  <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+               >    
+            <TextView
+                android:id="@+id/label_item_batch"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+        	  android:paddingLeft="15dp"
+                android:textAppearance="@style/TextAppearance.Small"
+                android:textColor="@color/Black" 
+                android:visibility="gone"
+                android:text="Seq#:" />
+            
+            <me.SyncWise.Android.Widgets.TinyNumberPicker
+            xmlns:tnp="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tiny_number_picker_sequence"
+            android:layout_width="120dp"
+         
+            android:layout_height="wrap_content"
+             android:visibility="gone"
+            tnp:iconSize="20dp" />
+            </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Header -->
+    
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical" >
+        
+        <!-- Week dates Label -->
+        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        
+		    <TextView 
+		        android:id="@+id/label_date_from"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="@style/TextAppearance.Medium"
+		        android:textStyle="bold"
+		        android:textColor="@color/Blue"
+		        android:gravity="center"
+		        android:drawableLeft="@drawable/calendar_blue" />
+		    
+		    <TextView 
+		        android:id="@+id/label_date_to"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="@style/TextAppearance.Medium"
+		        android:textStyle="bold"
+		        android:textColor="@color/Blue"
+		        android:gravity="center"
+		        android:drawableLeft="@drawable/arrow_right_blue" />
+	        
+	    </LinearLayout>
+        
+        <!-- Week tabs layout -->
+        
+		<include layout="@layout/tabs_group" />
+		
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:padding="5dp"
+	    android:orientation="horizontal" >
+	
+	    <!-- Days  -->
+	    
+	    <ScrollView
+	        android:id="@+id/scroll_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:scrollbars="none"
+	        android:requiresFadingEdge="vertical" >
+	    
+			<me.SyncWise.Android.Widgets.SegmentedRadioGroup
+			    xmlns:srg="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/group_days"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				srg:has_padding_between_children="true"
+				srg:padding_color="@color/Black" />
+		
+		</ScrollView>
+		
+	    <!-- Cycle plan -->
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_dslv"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_gravity="center_horizontal"
+	        android:padding="3dip"
+	        android:orientation="vertical"
+	        android:background="@drawable/main_panel_background" >
+			
+			<include layout="@layout/emtpy_list_view"/>
+	        
+	        <me.SyncWise.Android.Widgets.DSLV.DragSortListView
+	            android:id="@+id/dslv_cycle_plan"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" />
+			
+		</LinearLayout>
+	
+    </LinearLayout>
+    
+</LinearLayout>

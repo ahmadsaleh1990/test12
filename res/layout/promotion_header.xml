@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_promotion_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+    
+    <!-- Promotion Header - Icon -->
+    
+    <ImageView
+        android:id="@+id/icon_promotion_header"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/hpromotion_icon"
+        android:contentDescription="@string/contentDescription" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical" >
+        
+        <!-- Promotion Header  - Name -->
+        
+        <TextView
+            android:id="@+id/label_promotion_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Medium"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:maxLines="2"
+   	        android:shadowColor="@color/listview_divider_light"
+	        android:shadowDx="5"
+	        android:shadowDy="5"
+	        android:shadowRadius="10" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        
+        	<!-- Promotion Header - Code -->
+        
+	        <TextView
+	            android:id="@+id/label_promotion_header_code"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+        
+	        <!-- promotion Header  - Date from:to:  -->
+	        
+	        <TextView
+	            android:id="@+id/label_promotion_header_date"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:textAppearance="@style/TextAppearance.Small"
+	            android:textColor="@color/DeepSkyBlue" />
+	        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

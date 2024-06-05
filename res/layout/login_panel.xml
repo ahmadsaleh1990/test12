@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<!-- Login Outer Panel -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_login_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/outer_panel_background" >
+    
+    <!-- Firm License Indication -->
+    
+    <TextView
+        android:id="@+id/label_firm_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:textColor="@color/Black" />
+    
+    <!-- Login Inner Panel -->
+    
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_panel_background"
+        android:padding="10dp"
+        android:orientation="vertical" >
+	
+	    <!-- Username field -->
+	    
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+		    <EditText
+		        android:id="@+id/edittext_username"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:background="@drawable/edit_text"
+		        android:paddingRight="30dp"
+		        android:textColor="@color/Black"
+		        android:textColorHint="@color/listview_divider"
+		        android:inputType="text" />
+		    
+		    <include layout="@layout/button_clear"
+		        android:id="@+id/button_clear_username" />
+	    
+	    </FrameLayout>
+	    
+	    <!-- Password field -->
+	    
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    
+		    <EditText
+		        android:id="@+id/edittext_password"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/edit_text"
+		        android:paddingRight="30dp"
+		        android:textColor="@color/Black"
+		        android:textColorHint="@color/listview_divider"
+		        android:inputType="textPassword"
+		        android:imeOptions="actionGo" />
+	    
+		    <include layout="@layout/button_clear"
+		        android:id="@+id/button_clear_password" />
+	    
+		</FrameLayout>
+		    
+	    <!-- Login button -->
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_button_login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:onClick="signIn"
+	        android:background="@drawable/button_blue" >
+	        
+			<ImageView
+			    android:id="@+id/icon_button_login"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/key" />
+			
+			<TextView
+			    android:id="@+id/label_button_login"
+			    android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_gravity="center_vertical"
+	        	android:gravity="center"
+	        	android:textColor="@color/White"
+	        	android:textAppearance="@style/TextAppearance.Large"
+	        	android:textStyle="bold" />
+	        
+	    </LinearLayout>
+    
+	</LinearLayout>
+	    
+    <!-- Previous login -->
+    
+    <LinearLayout
+        android:id="@+id/layout_previous_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sand_clock"
+            android:contentDescription="@string/contentDescription" />
+        
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+        
+		    <TextView
+		        android:id="@+id/label_previous_login"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical|left"
+		        android:textAppearance="@style/TextAppearance.Small"
+		        android:textColor="@color/Black" />
+		    
+		    <TextView
+		        android:id="@+id/label_previous_login_date"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical|right"
+		        android:textAppearance="@style/TextAppearance.Medium"
+		        android:textColor="@color/Black" />
+    
+    	</LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

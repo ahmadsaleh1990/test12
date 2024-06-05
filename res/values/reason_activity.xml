@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+
+    <string name="reason_activity_title" >SELECT REASON</string>
+    <string name="reason_note_hint" >Enter reason note.</string>
+    <string name="empty_reason_list_label" >No reasons.</string>
+    <string name="empty_reason_list_message" >No reason found, please contact the administrator.</string>
+    <string name="enter_reson_message">Please provide the required reason(s)</string>
+    
+    <string name="visit_cancellation_label" >Visit Cancellation</string>
+    <string name="no_sales_label" >No Sales</string>
+    <string name="no_client_objective_label" >No Client Objective</string>
+    <string name="no_client_survey_label" >No Client Survey</string>
+    
+    <!-- Quick Action Items -->
+    <string name="quick_action_confirm_label" >Confirm</string>
+    
+</resources>

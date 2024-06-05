@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="summarydetails_view_activity_title" >SALES SUMMARY</string>
+    <string name="total_sale_order_label" >TOTAL SALES ORDERS</string>
+    <string name="total_sale_invoice_label" >TOTAL SALES INVOICES</string>
+    <string name="empty_summaries_label" >No summaries.</string>
+    <string name="empty_sale_order_list_label" >No sale order.</string>
+    <string name="empty_sale_invoice_list_label" >No sale invoice.</string>
+    <string name="summary_header_total_amount_label" >Total amount</string>
+
+    
+    <string name="summary_client_name_label" >Client Name</string>
+    
+    <string name="daily_summary_report_error_message">An error occurred while building the report. Please contact the administrator.</string>
+    
+</resources>

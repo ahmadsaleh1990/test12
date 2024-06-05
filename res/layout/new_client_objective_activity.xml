@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Objective Priority Selection -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:focusable="true"
+		android:focusableInTouchMode="true" >
+        
+        <TextView android:id="@+id/objective_priority_selection_label"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textAppearance="@style/TextAppearance.Medium"
+			android:textStyle="bold" />
+        
+        <Spinner android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@drawable/spinner_background" />
+        
+    </LinearLayout>
+    
+    <!-- Objective additional data (Note / Reason) -->
+    
+	<TextView android:id="@+id/label_objective_additional_data"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+		android:textAppearance="@style/TextAppearance.Medium"
+		android:textStyle="bold"
+		android:visibility="gone" />
+    
+    <!-- Free Entry Note -->
+    
+    <me.SyncWise.Android.Widgets.LinedEditText
+        xmlns:let="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edittext_objective"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/listview_divider"
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        let:line_color="@color/DeepSkyBlue" />
+
+</LinearLayout>

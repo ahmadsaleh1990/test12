@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2013 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="cycle_planning_activity_title" >SCHEDULE</string>
+    <string name="some_clients_removed_message" >Some clients are already in the list.</string>
+    <string name="all_clients_removed_message" >All clients are already in the list.</string>
+    <string name="no_cycle_error_message" >There are no cycles to add clients.</string>
+    <string name="daily_calls_max_exceeded_message">The selected clients were not added. The maximum number of daily calls is exceeded.</string>
+    <string name="daily_calls_max_reached_message">Some of the selected clients were not added. The maximum number of daily calls was reached.</string>
+    <string name="cycle_list_dialog_title" >Choose a cycle</string>
+    <string name="save_error_message">The modifications could not be save due to an error.</string>
+    <string name="save_success_message">The modications were successfully saved.</string>
+    <string name="empty_calls_list_label" >No Calls.</string>
+    <string name="select_week_number_to_push_label" >Select the number of weeks to push the cycle.</string>
+
+</resources>

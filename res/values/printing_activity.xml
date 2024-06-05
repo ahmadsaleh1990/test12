@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2015 SyncWise International SARL
+	All rights reserved.
+
+	The text, images, audio and video files herein are the copyrighted works of SyncWise International SARL.
+	Reproduction in whole or in part, whether on paper, on the Internet, on CD-ROM, or any other medium,
+	including utilization in machines capable of reproduction or without the express permission of SyncWise
+	International SARL is prohibited.
+-->
+
+<resources>
+    
+    <string name="printing_activity_print_request_message">Would like to print a copy ?</string>
+    <string name="printing_activity_no_pairing_printers_message">You do not have any pairing printer.</string>
+    <string name="printing_activity_no_user_printers_message">You do not own a printer. Please contact the administrator.</string>
+    <string name="printing_activity_not_connected_message">The printer is not connected.</string>
+    
+    <string name="printing_activity_turn_printer_on_message">Make sure the printer is turned on.</string>
+    <string name="printing_activity_printer_not_supported">The paired printer does not support the requried format.</string>
+    
+    <!-- End Journey Reports -->
+    <string name="end_journey_report_collection_summary_title">COLLECTION SUMMARY</string>
+    <string name="end_journey_report_invoice_summary_title">INVOICE SUMMARY</string>
+    <string name="end_journey_report_missed_items_title">MISSED SALES</string>
+    <string name="end_journey_report_load_in_summary_title">LOAD IN SUMMARY</string>
+        <string name="end_journey_report_movement_summary_title">MOVEMENT SUMMARY</string>
+    <string name="end_journey_report_sales_order_summary_title">SALES ORDER SUMMARY</string> 
+    <string name="end_journey_report_sales_return_summary_title">SALES RETURN SUMMARY REPORT</string>
+    <string name="end_journey_report_sales_free_summary_title">FOC SUMMARY REPORT</string>
+    <string name="end_journey_report_item_distribution_title">ITEM DISTRIBUTION</string>
+    <string name="end_journey_report_client_asset_title">CLIENT ASSET</string>
+    <string name="end_journey_report_plan_visits_title">PLAN VISITS</string>
+    <string name="end_journey_report_Collection_Settel_title">COLLECTION SETTLEMENT</string>
+</resources>
