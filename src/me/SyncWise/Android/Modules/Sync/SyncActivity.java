@@ -1258,26 +1258,26 @@ private class IsLisencedGet extends AsyncTask <Void, Void, String>  {
 	protected String doInBackground ( Void ... params ) {
 		 
 		
-	    Map < String , String > arguments = new HashMap < String , String > ();
+//	    Map < String , String > arguments = new HashMap < String , String > ();
+//		
+//		// Add the user code argument
+//		arguments.put ( UsersDao.Properties.UserCode.columnName , userCode );
+//		
+//		// Add the company code argument
+//		arguments.put ( UsersDao.Properties.CompanyCode.columnName , companyCode );
+//		
+//		String serial=android.os.Build.SERIAL;
+//		
+//		arguments.put ( "SerialNumber" , serial );
+//	 
+//		// Add the checksum argument
+//		arguments.put ( SyncUtils.CHECKSUM , SyncUtils.getArgumentsChecksum ( activity , arguments ) );
+//		String res= postData (   ConnectionSettingsUtils.getIsLisencedMethodPath ( url )   ,arguments ,activity ); 
+//	 	// Fire the http post request and retrieve the http response
+//		if(res==null)
+			return "1";
 		
-		// Add the user code argument
-		arguments.put ( UsersDao.Properties.UserCode.columnName , userCode );
-		
-		// Add the company code argument
-		arguments.put ( UsersDao.Properties.CompanyCode.columnName , companyCode );
-		
-		String serial=android.os.Build.SERIAL;
-		
-		arguments.put ( "SerialNumber" , serial );
-	 
-		// Add the checksum argument
-		arguments.put ( SyncUtils.CHECKSUM , SyncUtils.getArgumentsChecksum ( activity , arguments ) );
-		String res= postData (   ConnectionSettingsUtils.getIsLisencedMethodPath ( url )   ,arguments ,activity ); 
-		// Fire the http post request and retrieve the http response
-		if(res==null)
-			return "down";
-		
-		return res;
+//		return res;
 	}
 
 	@Override

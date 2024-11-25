@@ -20,6 +20,8 @@ import me.SyncWise.Android.Database.DatabaseUtils;
 import me.SyncWise.Android.Database.DuoUsers;
 import me.SyncWise.Android.Database.DuoUsersDao;
 import me.SyncWise.Android.Database.PermissionsUtils;
+import me.SyncWise.Android.Database.Users;
+import me.SyncWise.Android.Database.UsersDao;
 import me.SyncWise.Android.Gson.BaseTimerActivity;
 import me.SyncWise.Android.Gson.Http;
 import me.SyncWise.Android.Widgets.Baguette;
@@ -95,7 +97,16 @@ public class DuoActivityTime extends Activity   {
 		if ( size.y * 1 / 5 > minHeight )
 			// Assign the icon height
 			solutionLogo.getLayoutParams ().height = size.y * 1 / 5;
-		( (ImageView) findViewById ( R.id.icon_logo_solution ) ).setImageResource ( R.drawable.logo_cash_van );
+		
+		Users currentUser = DatabaseUtils.getInstance (  this ).getDaoSession ().getUsersDao ().queryBuilder ()
+				.where ( UsersDao.Properties.UserCode.eq ( DatabaseUtils.getCurrentUserCode ( this ) ) ,
+						UsersDao.Properties.CompanyCode.eq ( DatabaseUtils.getCurrentCompanyCode (  this ) ) )
+				.unique ();
+		if(currentUser!=null && currentUser.getUserType()==10)
+		( (ImageView) findViewById ( R.id.icon_logo_solution ) ).setImageResource ( R.drawable.logo_sales );
+		else
+			( (ImageView) findViewById ( R.id.icon_logo_solution ) ).setImageResource ( R.drawable.logo_merchandising );
+			
 		Button usernameClearButton = (Button) findViewById ( R.id.button_clear_username );
 		usernameClearButton.setEnabled ( true );
 		usernameClearButton.setVisibility ( View.VISIBLE );
